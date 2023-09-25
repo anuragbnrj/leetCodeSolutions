@@ -1,26 +1,20 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
-        map<char, int> mpp;
+        int xorr = 0;
 
         for (char ch : s) {
-            if (!mpp.count(ch)) {
-                mpp[ch] = 1;
-            } else {
-                mpp[ch] += 1;
-            }
+            xorr = xorr ^ (ch - 'a');
         }
 
         char res;
         for (char ch : t) {
-            mpp[ch] -= 1;
-
-            if (!mpp.count(ch) || mpp[ch] < 0) {
-                res = ch;
-            }
+            xorr = xorr ^ (ch - 'a');
         }
 
+        // cout << "xor: " << xorr << endl;
         
+        res = xorr + 'a';
         return res;
         
     }
