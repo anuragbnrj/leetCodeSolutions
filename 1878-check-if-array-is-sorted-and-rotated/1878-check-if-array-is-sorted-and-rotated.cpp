@@ -12,11 +12,6 @@ public:
             }
         }
 
-        if (dec <= 1) {
-            return true;
-        } else {
-            return false;
-        }
-        
+        return (dec <= 1);
     }
 };
