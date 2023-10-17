@@ -2,7 +2,7 @@ class Solution {
 public:
     int firstUniqChar(string s) {
         int len = s.size();
-        map<char, int> mpp;
+        unordered_map<char, int> mpp;
         
         for (int i = 0; i < len; i++) {
             if (mpp.count(s[i])) {
