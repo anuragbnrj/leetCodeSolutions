@@ -5,11 +5,7 @@ public:
         unordered_map<char, int> mpp;
         
         for (int i = 0; i < len; i++) {
-            if (mpp.count(s[i])) {
-                mpp[s[i]] += 1;
-            } else {
-                mpp[s[i]] = 1;
-            }
+            mpp[s[i]] += 1;
         }
 
         for (int i = 0; i < len; i++) {
