@@ -1,45 +1,33 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-vector<vector<bool>> isQueen;
-
 class Solution {
 public:
     vector<vector<string>> solveNQueens(int n) {
         vector<vector<string>> res;
-        isQueen.resize(n);
-        for (int i = 0; i < n; i++) {
-            isQueen[i].resize(n);
-        }
-        solve(0, res);
+        vector<vector<bool>> isQueen(n, vector<bool>(n, false));
+        solve(0, isQueen, res);
 
         return res;
     }
 
 private:
-    void solve(int r, vector<vector<string>> &res) {
+    void solve(int r, vector<vector<bool>> &isQueen, vector<vector<string>> &res) {
         if (r == isQueen.size()) {
-            addToResult(res);
+            addToResult(isQueen, res);
             return;
         }
 
         for (int c = 0; c < isQueen[0].size(); c++) {
-            if (tryPlacing(r, c)) {
+            if (tryPlacing(r, c, isQueen)) {
                 isQueen[r][c] = true;
-                solve(r + 1, res);
+                solve(r + 1, isQueen, res);
                 isQueen[r][c] = false;
             }
         }
     }
 
-    bool tryPlacing(int r, int c) {
-        // cout << "Inside tryPlacing r : " << r << "\t c: " << c ;
+    bool tryPlacing(int r, int c, vector<vector<bool>> &isQueen) {
         // check same column
         for (int i = r - 1; i >= 0; i--) {
             if (isQueen[i][c]) {
-                // cout << "\t returning false" << endl;
                 return false;
             }
         }
@@ -47,7 +35,6 @@ private:
         // check upper left diagonal
         for (int i = r - 1, j = c - 1; i >= 0 && j >= 0; i--, j--) {
             if (isQueen[i][j]) {
-                // cout << "\t returning false" << endl;
                 return false;
             }
         }
@@ -55,17 +42,15 @@ private:
         // check upper right diagonal
         for (int i = r - 1, j = c + 1; i >=0 && j < isQueen[0].size(); i--, j++) {
             if (isQueen[i][j]) {
-                // cout << "\t returning false" << endl;
                 return false;
             }
         }
 
         // return true when all conditions are satisfied
-        // cout << "\t returning true" << endl;
         return true;
     }
 
-    void addToResult(vector<vector<string>> &res) {
+    void addToResult(vector<vector<bool>> &isQueen, vector<vector<string>> &res) {
         vector<string> arr;
         for (int r = 0; r < isQueen.size(); r++) {
             string str = "";
