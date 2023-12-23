@@ -1,49 +1,31 @@
 class Solution {
 public:
     vector<string> generateParenthesis(int n) {
-        string ds = "";
+        string curr = "";
         vector<string> res;
-        solve(0, n, ds, res);
+        solve(n, n, curr, res);
 
         return res;
     }
 
 private:
-    void solve(int idx, int n, string ds, vector<string> &res) {
-        if (idx == (2 * n)) {
-            if (isWellFormed(n, ds)) {
-                res.push_back(ds);
-            }
+    void solve(int l, int r, string curr, vector<string> &res) {
+        if (l == 0 && r == 0) {
+            res.push_back(curr);
             return;
         }
         
-        ds += '(';
-        solve(idx + 1, n, ds, res);
-        ds.pop_back();
-
-        ds += ')';
-        solve(idx + 1, n, ds, res);
-        ds.pop_back();
-    }
-
-    bool isWellFormed(int n, string &ds) {
-        int ctr = 0;
-        for (int i = 0; i < ds.size(); i++) {
-            if (ds[i] == '(') {
-                ctr++;
-            } else {
-                ctr--;
-            }
-
-            if (ctr < 0 || ctr > n) {
-                return false;
-            }
+        if (l > 0) {
+            curr += '(';
+            solve(l - 1, r, curr, res);
+            curr.pop_back();
         }
+        
 
-        if (ctr == 0) {
-            return true;
+        if (r > l) {
+            curr += ')';
+            solve(l, r - 1, curr, res);
+            curr.pop_back();
         }
-
-        return false;
     }
 };
