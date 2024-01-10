@@ -45,6 +45,8 @@ private:
     Node *root;
 public:
     Trie() {
+        ios_base::sync_with_stdio(false); 
+        cin.tie(NULL);
         root = new Node();
     }
     
