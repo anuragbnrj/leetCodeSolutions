@@ -50,7 +50,7 @@ public:
     }
 
     void insert(string word) {
-        Node * node = root;
+        Node *node = root;
         for (int i = 0; i < word.size(); i++) {
             if (!node->containsKey(word[i])) {
                 node->put(word[i], new Node());
