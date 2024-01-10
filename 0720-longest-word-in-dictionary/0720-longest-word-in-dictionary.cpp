@@ -98,6 +98,20 @@ public:
         node->reduceEnd();
     }
 
+    bool isValid(string &word) {
+        Node *node = root;
+        for (int i = 0; i < word.size(); i++) {
+            if (node->containsKey(word[i])) {
+                node = node->get(word[i]);
+                if (node->getEndsWith() <= 0) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
 };
 
 class Solution {
@@ -111,17 +125,7 @@ public:
 
         string res = "";
         for (string word : words) {
-            string temp = "";
-            bool contains = true;
-            for (int i = 0; i < word.size(); i++) {
-                temp = temp + word[i];
-                if (trie.countWordsEqualTo(temp) <= 0) {
-                    contains = false;
-                    break;
-                }
-            }
-
-            if (contains) {
+            if (trie.isValid(word)) {
                 if (word.size() > res.size()) {
                     res = word;
                 } else if (word.size() == res.size()) {
