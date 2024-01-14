@@ -47,28 +47,6 @@ public:
 		node->setEnd();
 	}
 
-	bool search(string word) {
-		Node *node = root;
-		for (int i = 0; i < word.size(); i++) {
-			if (!node->containKey(word[i])) {
-				return false;
-			}
-			node = node->get(word[i]);
-		}
-		return node->isEnd();
-	}
-
-	bool startsWith(string prefix) {
-		Node *node = root;
-		for (int i = 0; i < prefix.size(); i++) {
-			if (!node->containKey(prefix[i])) {
-				return false;
-			}
-			node = node->get(prefix[i]);
-		}
-		return true;
-	}
-
     void fillLexicographically(Node *node, string curr, vector<string> &res)  {
         for (char ch = '0'; ch <= '9'; ch++) {
             if (node->containKey(ch)) {
@@ -103,8 +81,6 @@ public:
         for (int i = 1; i <= n; i++) {
             trie.insert(to_string(i));
         }
-
-        cout << "Contains 99? " << trie.search("99") << endl;
 
         return trie.getLexSorted();
     }
