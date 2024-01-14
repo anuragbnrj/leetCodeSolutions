@@ -1,32 +1,31 @@
 class Solution {
 public:
     vector<int> beautifulIndices(string s, string a, string b, int k) {
-        int len = s.size();
-        int lenA = a.size();
-        int lenB = b.size();
-
-        vector<int> occurA, occurB;
-
-        for (int i = 0; i < len; i++) {
-            if (s.substr(i, lenA) == a) {
-                occurA.push_back(i);
-            }
-
-            if (s.substr(i, lenB) == b) {
-                occurB.push_back(i);
-            }
+        vector<int> occurA;
+        vector<int> occurB;
+        
+        int pos = s.find(a);
+        while (pos != std::string::npos) {
+            occurA.push_back(pos);
+            pos = s.find(a, pos + 1);
         }
-
+        
+        pos = s.find(b);
+        while (pos != std::string::npos) {
+            occurB.push_back(pos);
+            pos = s.find(b, pos + 1);
+        }
+        
         vector<int> res;
-        for (int i = 0; i < occurA.size(); i++) {
-            for (int j = 0; j < occurB.size(); j++) {
-                if (abs(occurA[i] - occurB[j]) <= k) {
-                    res.push_back(occurA[i]);
+        for (int elA : occurA) {
+            for (int elB : occurB) {
+                if (abs(elB - elA) <= k) {
+                    res.push_back(elA);
                     break;
                 }
             }
         }
-
+        
         return res;
     }
 };
