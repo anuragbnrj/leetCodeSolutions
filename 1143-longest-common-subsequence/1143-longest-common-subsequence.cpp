@@ -1,30 +1,24 @@
 class Solution {
 public:
-    int longestCommonSubsequence(string text1, string text2) {
-        vector<vector<int>> dp(1001, vector<int>(1001, -1));
-        return solve(0, 0, text1, text2, dp);
-    }
-
-private:
-    int solve(int idx1, int idx2, string &a, string &b, vector<vector<int>> &dp) {
+    int longestCommonSubsequence(string a, string b) {
         int la = a.size();
-        int lb = b.size();
-        if (idx1 == la || idx2 == lb) {
-            return 0;
+        int lb = b.size(); 
+        vector<vector<int>> dp(1001, vector<int>(1001, 0));
+
+        for (int i = la - 1; i >= 0; i--) {
+            for (int j = lb - 1; j >= 0; j--) {
+                int c1 = 0, c2 = 0, c3 = 0;
+                if (a[i] == b[j]) {
+                    c1 = 1 + dp[i + 1][j + 1];
+                }
+
+                c2 = dp[i + 1][j];
+                c3 = dp[i][j + 1];
+
+                dp[i][j] = max({c1, c2, c3});
+            }
         }
 
-        if (dp[idx1][idx2] != -1) {
-            return dp[idx1][idx2];
-        }
-
-        int c1 = 0, c2 = 0, c3 = 0;
-        if (a[idx1] == b[idx2]) {
-            c1 = 1 + solve(idx1 + 1, idx2 + 1, a, b, dp);
-        }
-
-        c2 = solve(idx1 + 1, idx2, a, b, dp);
-        c3 = solve(idx1, idx2 + 1, a, b, dp);
-
-        return dp[idx1][idx2] = max({c1, c2, c3});
+        return dp[0][0];
     }
 };
