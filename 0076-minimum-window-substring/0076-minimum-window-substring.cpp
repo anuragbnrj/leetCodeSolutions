@@ -1,12 +1,12 @@
 class Solution {
 public:
     string minWindow(string n, string k) {
-        vector<int> freqK(256, 0);
+        vector<int> freqK(128, 0);
         for (char ch : k) {
             freqK[ch]++;
         }
 
-        vector<int> freqN(256, 0);
+        vector<int> freqN(128, 0);
         int lenN = n.size();
         int minLen = INT_MAX, minBeg, minEnd;
         int beg = 0, end = 0;
@@ -39,7 +39,7 @@ public:
 
 private:
     bool isContained(vector<int> &freqK, vector<int> &freqN) {
-        for (int i = 0; i < 256; i++) {
+        for (int i = 0; i < 128; i++) {
             if (freqK[i] > freqN[i]) {
                 return false;
             }
