@@ -10,13 +10,6 @@ private:
         if (isZero(b)) {
             return 1;
         }
-        int len = b.size();
-        int ctr = 0;
-        for (int i = 0; i < len; i++) {
-            if (b[i] == 0) {
-                ctr++;
-            }
-        }
 
         bool flag = isOdd(b);
         divideBy2(b);
