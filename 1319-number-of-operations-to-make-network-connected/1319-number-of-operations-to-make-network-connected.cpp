@@ -57,19 +57,12 @@ public:
     }
 
     int findDistinctParents(int n) {
-        for (int i = 0; i < n; i++) {
-            cout << i + 1 << ": " << parent[i] + 1 << endl;
-        }
         set<int> parents;
         for (int i = 0; i < n; i++) {
             int parent = findUltimateParent(i);
             parents.insert(parent);
         }
-
-        for (int i = 0; i < n; i++) {
-            cout << i + 1 << ": " << parent[i] + 1 << endl;
-        }
-
+        
         return parents.size();
     }
 
