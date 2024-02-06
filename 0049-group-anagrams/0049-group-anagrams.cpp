@@ -6,7 +6,7 @@ public:
         unordered_map<string, vector<string>> groups;
         for (int i = 0; i < len; i++) {
             string temp = strs[i];
-            sort(temp.begin(), temp.end());
+            ranges::sort(temp);
 
             groups[temp].push_back(strs[i]);
         }
