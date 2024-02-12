@@ -6,7 +6,7 @@ public:
 
         int last = kmp[len];
 
-        if (len % (len - last) == 0) {
+        if (last != 0 && len % (len - last) == 0) {
             return true;
         } 
 
