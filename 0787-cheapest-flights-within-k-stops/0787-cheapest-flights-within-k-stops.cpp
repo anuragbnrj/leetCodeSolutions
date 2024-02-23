@@ -1,8 +1,6 @@
 class Solution {
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        int levelsAllowed = k + 2;
-
         vector<vector<pair<int, int>>> graph(n);
         for (int i = 0; i < (int)flights.size(); i++) {
             int u = flights[i][0];
@@ -12,39 +10,41 @@ public:
             graph[u].push_back({v, w});
         }
         
-        vector<int> minDist(n, INT_MAX);
-        vector<int> visited(n, 0);
-        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>> > pq;
-        queue<vector<int>> q;
-        pq.push({1, 0, src});
-        visited[src] = 1;
+        int allowedLevels = k + 2;
         
-        while (!pq.empty()) {
-            int sz = pq.size();
+        vector<int> minDist(n, INT_MAX);
+        queue<pair<int, int>> q;
+        q.push({src, 0});
+        minDist[src] = 0;
+
+        int currLevel = 1;
+        while (!q.empty() && currLevel <= allowedLevels) {
+            int sz = q.size();
             for (int i = 0; i < sz; i++) {
-                auto top = pq.top();
-                pq.pop();
-                int currLevel = top[0];
-                int currDist = top[1];
-                int currNode = top[2];
+                auto front = q.front();
+                q.pop();
+
+                int currNode = front.first;
+                int currDist = front.second;
 
                 if (currDist < minDist[currNode]) {
                     minDist[currNode] = currDist;
                 }
 
-                for (auto next : graph[currNode]) {
-                    int nextLevel = currLevel + 1;
-                    int nextDist = next.second;
-                    int nextNode = next.first;
+                for (auto edge : graph[currNode]) {
+                    int v = edge.first;
+                    int w = edge.second;
 
-                    cout << currNode << "\t" << nextNode << "\t" << nextLevel << endl;
-                    
-                    if (nextLevel <= levelsAllowed && currDist + nextDist < minDist[nextNode]) {
-                        pq.push({nextLevel, currDist + nextDist, nextNode});
-                    }
+                    if (currDist + w < minDist[v]) {
+                        q.push({v, currDist + w});
+                    } 
+
                 }
             }
+
+            currLevel++;
         }
+
 
         if (minDist[dst] == INT_MAX) {
             return -1;
