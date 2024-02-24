@@ -1,4 +1,3 @@
-#pragma GCC optimize("O3", "unroll-loops")
 class Solution {
 public:
     vector<int> findAllPeople(int n, vector<vector<int>>& meetings, int firstPerson) {
