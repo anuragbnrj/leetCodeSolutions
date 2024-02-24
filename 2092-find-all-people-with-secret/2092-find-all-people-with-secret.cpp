@@ -1,4 +1,4 @@
-
+#pragma GCC optimize("O3", "unroll-loops")
 class Solution {
 public:
     vector<int> findAllPeople(int n, vector<vector<int>>& meetings, int firstPerson) {
@@ -24,9 +24,13 @@ public:
         while (!pq.empty()) {
             auto top = pq.top();
             pq.pop();
-
             int curr = top.second;
             int currTime = top.first;
+
+            if (visited[curr]) {
+                continue;
+            }
+
             visited[curr] = true;
             hasSecret[curr] = true;
 
