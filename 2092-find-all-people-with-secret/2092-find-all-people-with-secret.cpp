@@ -1,3 +1,11 @@
+bool cmp(const vector<int> &x, const vector<int> &y) {
+    if (x[2] == y[2]) {
+        return x[0] < y[0];
+    } else {
+        return x[2] < y[2];
+    }
+}
+
 class Solution {
 public:
     vector<int> findAllPeople(int n, vector<vector<int>>& meetings, int firstPerson) {
@@ -80,11 +88,5 @@ private:
         parent[node] = node;
     }
 
-    static bool cmp(const vector<int> &x, const vector<int> &y) {
-        if (x[2] == y[2]) {
-            return x[0] < y[0];
-        } else {
-            return x[2] < y[2];
-        }
-    }
+    
 };
