@@ -11,8 +11,6 @@
  */
 class Solution {
 public:
-    int diameter = INT_MIN;
-
     int diameterOfBinaryTree(TreeNode* root) {
         int diameter = 0;
         calculateHeight(root, diameter);
