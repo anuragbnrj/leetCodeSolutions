@@ -4,47 +4,37 @@ public:
         int rows = matrix.size();
         int cols = matrix[0].size();
 
-        int beg = 0; 
-        int end = rows - 1;
-        int row = -1;
-        while (beg <= end) {
+        int beg = 0;
+        int end = rows * cols;
+        while (beg < end) {
             int mid = beg + ((end - beg) / 2);
 
-            if (matrix[mid][0] <= target && target <= matrix[mid][cols - 1]) {
-                row = mid;
-                break;
-            } else if (target < matrix[mid][0]) {
-                end = mid - 1;
-            } else {
-                beg = mid + 1;
-            }
-        }
-        if (row == -1) {
+            // cout << beg << "\t " << mid << "\t " << end << endl;
 
+            if (mid == rows * cols) {
+                return false;
+            }
+
+            int row = mid / cols;
+            int col = mid % cols;
+
+            if (matrix[row][col] < target) beg = mid + 1;
+            else end = mid;
+        }
+
+        // cout << "beg: " << beg << endl;
+
+        if (beg == rows * cols) {
             return false;
         }
 
+        int row = beg / cols;
+        int col = beg % cols;
 
-        beg = 0; 
-        end = cols - 1;
-        int col = -1;
-        while (beg <= end) {
-            int mid = beg + ((end - beg) / 2);
-
-            if (matrix[row][mid] == target) {
-                col = mid;
-                break;
-            } else if (target < matrix[row][mid]) {
-                end = mid - 1;
-            } else {
-                beg = mid + 1;
-            }
-        }
-        if (col == -1) {
-            return false;
-        } else { 
+        if (matrix[row][col] == target) {
             return true;
         }
-    }
 
+        return false;
+    }
 };
