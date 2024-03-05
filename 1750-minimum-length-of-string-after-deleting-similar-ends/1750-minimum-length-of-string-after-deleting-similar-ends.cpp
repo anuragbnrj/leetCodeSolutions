@@ -5,28 +5,18 @@ public:
         int beg = 0;
         int end = len - 1;
 
-        while (beg < end) {
-            char chbeg = s[beg];
-            char chend = s[end];
+        while (beg < end && s[beg] == s[end]) {
+            char ch = s[beg];
 
-            if (chbeg != chend) {
-                break;
-            }
-
-            while (beg <= end && s[beg] == chbeg) {
+            while (beg <= end && s[beg] == ch) {
                 beg++;
             }
 
-            while (beg <= end && s[end] == chend) {
+            while (beg < end && s[end] == ch) {
                 end--;
             }
         }
 
-        if (beg > end) {
-            return 0;
-        } else {
-            return end - beg + 1;
-        }
-        
+        return end - beg + 1;   
     }
 };
