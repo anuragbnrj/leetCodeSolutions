@@ -9,8 +9,8 @@ public:
             }
         }
         
-        map<int, int> prev;
-        map<int, bool> hasOccurred;
+        unordered_map<int, int> prev;
+        unordered_map<int, bool> hasOccurred;
         prev[0] = -1;
         hasOccurred[0] = true;
         int currSum = 0;
