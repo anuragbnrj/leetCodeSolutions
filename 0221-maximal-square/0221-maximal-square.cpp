@@ -4,49 +4,29 @@ public:
         int rows = matrix.size();
         int cols = matrix[0].size();
 
-        vector<vector<int>> m(rows, vector<int>(cols, 0));
+        vector<vector<int>> dp(rows, vector<int>(cols, 0));
+        int maxLen = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (matrix[i][j] == '1') {
-                    m[i][j] = 1;
-                } else {
-                    m[i][j] = 0;
-                }
-            }
-        }
-
-        int maxLen = INT_MIN;
-        vector<vector<int>> dp = m;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-
-                if (i > 0 && j > 0 && dp[i][j] == 1) {
-                    int prev = dp[i - 1][j - 1];
-                    
-                    int onesx = 0;
-                    for (int ctr = 0; ctr < prev + 1; ctr++) {
-                        if (m[i][j - ctr] == 1) {
-                            onesx++;
-                        } else {
-                            break;
-                        }
+                    int a = 0, b = 0, c = 0;
+                    if (i > 0 && j > 0) {
+                        a = dp[i - 1][j - 1] + 1;
                     }
 
-                    int onesy = 0;
-                    for (int ctr = 0; ctr < prev + 1; ctr++) {
-                        if (m[i - ctr][j] == 1) {
-                            onesy++;
-                        } else {
-                            break;
-                        }
+                    if (i > 0) {
+                        b = dp[i - 1][j] + 1;
                     }
 
-                    
-                    dp[i][j] = max(dp[i][j], min(onesx, onesy));
-                    
-                }
+                    if (j > 0) {
+                        c = dp[i][j - 1] + 1;
+                    }
 
-                maxLen = max(maxLen, dp[i][j]);
+                    int mini = min({a, b, c});
+
+                    dp[i][j] = max(1, mini);
+                    maxLen = max(maxLen, dp[i][j]);
+                }
             }
         }
 
