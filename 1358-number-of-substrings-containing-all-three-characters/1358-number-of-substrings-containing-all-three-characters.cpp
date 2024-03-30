@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numberOfSubstrings(string s) {
-        return solve(s, 3) - solve(s, 2);
+        return solve(s, 3);
     }
 
 private:
@@ -9,12 +9,14 @@ private:
         int n = s.size();
 
         int res = 0;
-        map<char, int> freq;
+        unordered_map<char, int> freq;
         for (int beg = 0, end = 0; end < n; end++) {
             char ch = s[end];
             freq[ch]++;
 
-            while (freq.size() > k) {
+            while (freq.size() == k) {
+                res += n - end;
+
                 char del = s[beg];
                 freq[del]--;
 
@@ -25,7 +27,6 @@ private:
                 beg++;
             }
 
-            res += (end - beg + 1);
         }
 
         return res;
