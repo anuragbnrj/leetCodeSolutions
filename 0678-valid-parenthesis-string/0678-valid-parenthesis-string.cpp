@@ -33,7 +33,7 @@ public:
             if (ch == '(') {
                 tempst.push(ch);
             } else if (ch == '*') {
-                if (!tempst.empty()) {
+                if (!tempst.empty() && tempst.top() == '(') {
                     tempst.pop();
                 } else {
                     tempst.push(ch);
