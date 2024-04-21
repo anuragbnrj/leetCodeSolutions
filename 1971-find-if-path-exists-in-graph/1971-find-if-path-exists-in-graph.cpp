@@ -15,15 +15,14 @@ public:
 
 private:
     bool isPossible(vector<vector<int>> &graph, vector<bool> &visited, int src, int des) {
+        if (src == des) {
+            return true;
+        }
+
         visited[src] = true;
 
         bool res = false;
         for (int i = 0; i < graph[src].size() && !res; i++) {
-            if (graph[src][i] == des) {
-                res = true;
-                break;
-            }
-
             if (!visited[graph[src][i]]) {
                 res = res || isPossible(graph, visited, graph[src][i], des);
             }
