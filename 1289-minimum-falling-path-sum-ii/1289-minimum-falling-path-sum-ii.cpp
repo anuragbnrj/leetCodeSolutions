@@ -26,27 +26,30 @@ private:
         int temp = INT_MAX;
         int dr[] = {-1, -1};
         int dc[] = {-1, 1};
-        for (int i = 0; i < 2; i++) {
-            int nr = r + dr[i];
-            int nc = c + dc[i];
-            if (isValid(rows, cols, nr, nc)) {
-                temp = min(temp, solve(grid, rows, cols, nr, nc, dp));
-            }
+        for (int i = 0; i < cols; i++) {
+            if (i == c) {continue;}
+
+            temp = min(temp, solve(grid, rows, cols, r - 1, i, dp));
+            // int nr = r + dr[i];
+            // int nc = c + dc[i];
+            // if (isValid(rows, cols, nr, nc)) {
+            //     temp = min(temp, solve(grid, rows, cols, nr, nc, dp));
+            // }
         }
 
         dp[r][c] = temp + grid[r][c];
         return dp[r][c];
     }
 
-    bool isValid(int rows, int cols, int r, int c) {
-        if (r < 0 || rows <= r) {
-            return false;
-        }
+    // bool isValid(int rows, int cols, int r, int c) {
+    //     if (r < 0 || rows <= r) {
+    //         return false;
+    //     }
 
-        if (c < 0 || cols <= c) {
-            return false;
-        }
+    //     if (c < 0 || cols <= c) {
+    //         return false;
+    //     }
 
-        return true;
-    }
+    //     return true;
+    // }
 };
