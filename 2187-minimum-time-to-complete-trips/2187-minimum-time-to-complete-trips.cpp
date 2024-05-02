@@ -4,7 +4,7 @@ class Solution {
 public:
     long long minimumTime(vector<int>& time, int totalTrips) {
         ll beg = 0;
-        ll end = 1e12 + 5;
+        ll end = 1e14 + 5;
 
         while (beg < end) {
             ll mid = beg + (end - beg) / 2;
