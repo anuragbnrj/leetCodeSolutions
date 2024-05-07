@@ -11,45 +11,45 @@
 class Solution {
 public:
     ListNode* doubleIt(ListNode* head) {
-        // cout << "-------------" << endl;
-        
-        vector<int> arr(10002, 0);
-        ListNode* curr = head;
-        
-        int sz = 1;
-        for (ListNode* curr = head; curr; curr = curr->next) {
-            arr[sz++] = curr->val;
-        }
-        
+        ListNode *revHead = reverse(head);
+
+        ListNode *curr = revHead, *prev = nullptr;
         int carry = 0;
-        for (int i = sz; i >= 1; i--) {
-            int curr = arr[i] * 2 + carry;
-            
-            if (curr > 9) {
-                arr[i] = curr % 10;
-                carry = curr / 10;
+        while(curr != nullptr) {
+            int val = curr->val * 2 + carry;
+
+            if (val > 9) {
+                carry = val / 10;
             } else {
-                arr[i] = curr;
                 carry = 0;
             }
+
+            curr->val = val % 10;
+            prev = curr;
+            curr = curr->next;
         }
-        
-        ListNode* newHead;
+
         if (carry > 0) {
-            arr[0] = carry;
-            newHead = new ListNode();
-            newHead->val = carry;
-            newHead->next = head;
-        } else {
-            newHead = head;
+            ListNode *newNode = new ListNode();
+            newNode->val = carry;
+            newNode->next = nullptr;
+            prev->next = newNode;
         }
-        
-        sz = 1;
-        for (ListNode* curr = head; curr; curr = curr->next) {
-            curr->val = arr[sz++];
+
+        return reverse(revHead);
+    }
+
+private:
+    ListNode* reverse(ListNode* head) {
+        ListNode *prev = nullptr, *curr = head, *temp = nullptr;
+
+        while (curr != nullptr) {
+            temp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = temp;
         }
-        
-        return newHead;
-        
+
+        return prev;
     }
 };
