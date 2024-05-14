@@ -12,11 +12,10 @@ public:
         // }
 
         int res = 0;
-        
+        vector<vector<bool>> visited(rows, vector<bool>(cols, false));
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (grid[r][c] > 0) {
-                    
                     res = max(res, getMax(grid,rows, cols, r, c, visited));
                 } 
             }
