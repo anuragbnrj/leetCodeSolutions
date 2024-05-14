@@ -3,6 +3,13 @@ public:
     int getMaximumGold(vector<vector<int>>& grid) {
         int rows = grid.size();
         int cols = grid[0].size();
+        
+        // for (int r = 0; r < rows; r++) {
+        //     for (int c = 0; c < cols; c++) {
+        //         cout << grid[r][c] << "\t"; 
+        //     }
+        //     cout << endl;
+        // }
 
         int res = 0;
         for (int r = 0; r < rows; r++) {
@@ -14,6 +21,7 @@ public:
             }
         }
 
+        
         return res;
     }
 
@@ -34,8 +42,8 @@ private:
             }
         }
 
+        visited[r][c] = false;
         return grid[r][c] + res;
-
     }
 
     bool isValid(int rows, int cols, int r, int c) {
