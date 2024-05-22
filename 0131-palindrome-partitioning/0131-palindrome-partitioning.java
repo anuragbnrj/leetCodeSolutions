@@ -1,17 +1,18 @@
 class Solution {
-    public List<List<String>> partition(String s) {
-        List<List<String>> res = new ArrayList<>();;
+    List<List<String>> res = new ArrayList<>();
 
+    public List<List<String>> partition(String s) {
         List<String> curr = new ArrayList<>();
-        solve(0, s, curr, res);
+
+        solve(0, s, curr);
         return res;
     }
 
-    private void solve(int beg, String s, List<String> curr, List<List<String>> res) {
+    private void solve(int beg, String s, List<String> curr) {
         int n = s.length();
 
         if (beg == n) {
-            if (curr.size() > 0) {
+            if (!curr.isEmpty()) {
                 res.add(new ArrayList<>(curr));
             }
             return;
@@ -23,7 +24,7 @@ class Solution {
 
             if (isPalindrome(temp)) {
                 curr.add(temp);
-                solve(i + 1, s, curr, res);
+                solve(i + 1, s, curr);
                 curr.remove(curr.size() - 1);
             }
         }
