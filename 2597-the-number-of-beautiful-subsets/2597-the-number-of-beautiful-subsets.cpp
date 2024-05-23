@@ -3,41 +3,32 @@ public:
     int beautifulSubsets(vector<int>& nums, int k) {
         int n = nums.size();
 
-        vector<pair<int, int>> conflicts;
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (abs(nums[i] - nums[j]) == k) {
-                    conflicts.push_back({i, j});
-                }
-            }
-        }
-
         int res = 0;
+        vector<int> freq(1001, 0);
         for (int mask = 0; mask < (1 << n); mask++) {
-            vector<int> subset;
-            set<int> indices;
+            int flag = true;
+
             for (int bit = 0; bit < n; bit++) {
                 if (mask >> bit & 1) {
-                    subset.push_back(nums[bit]);
-                    indices.insert(bit);
+                    if ((nums[bit] + k <= 1000 && freq[nums[bit] + k] > 0) ||
+                        (nums[bit] - k >= 0 && freq[nums[bit] - k] > 0)) {
+                        flag = false;
+                    }
+
+                    freq[nums[bit]]++;
                 }
             }
 
-            bool flag = true;
-            for (auto conflict : conflicts) {
-                int i = conflict.first;
-                int j = conflict.second;
+            if (flag == true)
+                res++;
 
-                if (indices.find(i) != indices.end() && indices.find(j) != indices.end()) {
-                    flag = false;
-                    break;
+            for (int bit = 0; bit < n; bit++) {
+                if (mask >> bit & 1) {
+                    freq[nums[bit]]--;
                 }
             }
-
-            if (flag == true) res++;
         }
 
         return res - 1;
-        
     }
 };
