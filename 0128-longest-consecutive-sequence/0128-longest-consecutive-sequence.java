@@ -5,7 +5,7 @@ class Solution {
             present.add(num);
         }
 
-        int res = 1;
+        int res = 0;
         for (int num : nums) {
             if (!present.contains(num - 1)) {
                 int len = 0;
