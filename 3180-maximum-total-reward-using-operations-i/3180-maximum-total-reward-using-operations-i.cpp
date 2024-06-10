@@ -1,9 +1,10 @@
 class Solution {
 public:
     int maxTotalReward(vector<int>& rewardValues) {
+        int n = rewardValues.size();
         sort(rewardValues.begin(), rewardValues.end());
         
-        vector<vector<int>> dp(2005, vector<int>(4005, -1));
+        vector<vector<int>> dp(n + 5, vector<int>(4005, -1));
         
         return solve(0, 0, rewardValues, dp);
     }
