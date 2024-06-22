@@ -1,20 +1,29 @@
 class Solution {
 public:
     int numberOfSubarrays(vector<int>& nums, int k) {
-        int len = nums.size();
+        return solve(nums, k) - solve(nums, k - 1);
+    }
 
-        map<int, int> freq;
-        int currOdd = 0;
-        freq[0] = 1;
+private:
+    int solve(vector<int> &nums, int k) {
+        int n = nums.size();
+
         int res = 0;
-        for (int i = 0; i < len; i++) {
-            if (nums[i] % 2 == 1) {
-                currOdd++;
+        int oddCount = 0;
+        for (int beg = 0, end = 0; end < n; end++) {
+            if (nums[end] % 2 == 1) {
+                oddCount++;
             }
 
-            int req = currOdd - k;
-            res += freq[req];
-            freq[currOdd]++;
+            while (oddCount > k) {
+                if (nums[beg] % 2 == 1) {
+                    oddCount--;
+                }
+
+                beg++;
+            }
+
+            res += end - beg + 1;
         }
 
         return res;
