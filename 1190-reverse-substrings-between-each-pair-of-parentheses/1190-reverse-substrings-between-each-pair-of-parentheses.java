@@ -2,43 +2,37 @@ class Solution {
     public String reverseParentheses(String s) {
         int n = s.length();
         
-        Stack<Character> st = new Stack<>();
+        // First pass to find complements
+        Stack<Integer> st = new Stack<>();
+        int[] complement = new int[n];
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
 
             if (ch == '(') {
-                st.push(ch);
-            } else if (ch == ')') {
-                Queue<Character> temp = new LinkedList<>();
+                st.push(i);
+            }
 
-                while (st.peek() != '(') {
-                    char top = st.peek();
-                    st.pop();
-
-                    temp.add(top);
-                }
-
+            if (ch == ')') {
+                int top = st.peek();
                 st.pop();
 
-                while (!temp.isEmpty()) {
-                    char front = temp.peek();
-                    temp.poll();
-
-                    st.push(front);
-                }
-            } else {
-                st.push(ch);
+                complement[top] = i;
+                complement[i] = top;
             }
         }
 
-        StringBuilder ans = new StringBuilder();
-        while (!st.isEmpty()) {
-            char top = st.peek();
-            st.pop();
-
-            ans.append(top);
+        // Second pass to build results
+        StringBuilder res = new StringBuilder();
+        for (int i = 0, direction = 1; i < n; i += direction) {
+            char ch = s.charAt(i);
+            if (ch == '(' || ch == ')') {
+                i = complement[i];
+                direction = -1 * direction;
+            } else {
+                res.append(ch);
+            }
         }
 
-        return ans.reverse().toString();
+        return res.toString();
     }
 }
