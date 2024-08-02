@@ -20,7 +20,7 @@ class Solution {
 
         String temp = "";
         for (int i = beg; i < n; i++) {
-            temp += s.charAt(i);
+            temp = s.substring(beg, i + 1);
 
             if (isPalindrome(temp)) {
                 curr.add(temp);
