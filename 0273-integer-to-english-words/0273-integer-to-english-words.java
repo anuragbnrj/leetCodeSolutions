@@ -52,8 +52,17 @@ class Solution {
         int huns = temp % 10;
 
         String[] mapping = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
-
+        
+        
         String ans = "";
+        if (huns > 0) {
+            ans = mapping[huns] + " Hundred";
+        }
+
+        if (ans.length() > 0 && lastTwo > 0) {
+            ans += " ";
+        }
+        
         if (lastTwo == 1) {
             ans += "One";
         } else if (lastTwo == 2) {
@@ -94,30 +103,27 @@ class Solution {
             ans += "Nineteen";
         } else {
             if (tens == 2) {
-                ans = "Twenty" + ans;
+                ans += "Twenty" ;
             } else if (tens == 3) {
-                ans = "Thirty" + ans;
+                ans += "Thirty";
             } else if (tens == 4) {
-                ans = "Forty" + ans;
+                ans += "Forty";
             } else if (tens == 5) {
-                ans = "Fifty" + ans;
+                ans += "Fifty";
             } else if (tens == 6) {
-                ans = "Sixty" + ans;
+                ans += "Sixty";
             } else if (tens == 7) {
-                ans = "Seventy" + ans;
+                ans += "Seventy";
             } else if (tens == 8) {
-                ans = "Eighty" + ans;
+                ans += "Eighty";
             } else if (tens == 9) {
-                ans = "Ninety" + ans;
+                ans += "Ninety";
             }
 
             if (ones > 0) {
-                ans = ans + " " + mapping[ones];
+                if (ans.length() > 0) ans += " ";
+                ans += mapping[ones];
             }  
-        }
-
-        if (huns > 0) {
-            ans = mapping[huns] + " Hundred " + ans;
         }
 
         return ans;
