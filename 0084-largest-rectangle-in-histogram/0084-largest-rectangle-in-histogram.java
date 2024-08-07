@@ -9,7 +9,7 @@ class Solution {
 
             int curr = heights[i];
             
-            while(st.size() > 0 && curr > heights[st.peek()]) {
+            while(st.size() > 0 && curr < heights[st.peek()]) {
                 st.pop();
             }
 
@@ -37,16 +37,11 @@ class Solution {
 
         int ans = 0;
         for (int i = 0; i < n; i++) {
-            int left = 0;
-            if (pl[i] != -1) {
-                left = i - pl[i] - 1;
-            }
-            int right = 0;
-            if (nl[i] != n) {
-                right = nl[i] - 1 - i;
-            }
+            int left = i - pl[i] - 1;
+            int right = nl[i] - 1 - i;
 
-            int currContri = (left + right + 1)* heights[i];
+            int currContri = (left + right + 1) * heights[i];
+            // System.out.println("i: " + i + ", pl[i]: " + pl[i] + ", nl[i]: " + nl[i] + ", currContri: " + currContri);
             ans = Math.max(ans, currContri);
         }
 
