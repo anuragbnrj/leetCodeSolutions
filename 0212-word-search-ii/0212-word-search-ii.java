@@ -12,51 +12,43 @@ class Solution {
         int cols = board[0].length;
         boolean[][] visited = new boolean[rows][cols];
         Set<String> result = new HashSet<>();
+        StringBuilder currWord = new StringBuilder();
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
-                solve(r, c, board, visited, result, root, "");
+                solve(r, c, board, visited, result, root, currWord);
             }
         }
 
         return new ArrayList<>(result);
     }
 
-    private void solve(int r, int c, char[][] board, boolean[][] visited, Set<String> result, Node curr, String currWord) {
-        visited[r][c] = true;
+    private void solve(int r, int c, char[][] board, boolean[][] visited, Set<String> result, Node curr, StringBuilder currWord) {
+        int rows = board.length;
+        int cols = board[0].length;
 
-        int[] dr = {-1, 0, 0, 1};
-        int[] dc = {0, -1, 1, 0};
+        if (r < 0 || r >= rows || c < 0 || c >= cols || visited[r][c]) {
+            return;
+        }
 
         char ch = board[r][c];
         if (curr.child[ch - 'a'] == null) {
-            visited[r][c] = false;
             return;
         }
         
-        if (curr.child[ch - 'a'].endsAt == true) {
-            result.add(currWord + ch);
+        curr = curr.child[ch - 'a'];
+        currWord.append(ch);
+        if (curr.endsAt == true) {
+            result.add(currWord.toString());
         }
         
-        int rows = board.length;
-        int cols = board[0].length;
-        for (int i = 0; i < 4; i++) {
-            int nr = r + dr[i];
-            int nc = c + dc[i];
-
-            if (isValid(nr, nc, rows, cols) && !visited[nr][nc]) {
-                solve(nr, nc, board, visited, result, curr.child[ch - 'a'], currWord + ch);
-            }
-        }
+        visited[r][c] = true;
+        solve(r - 1, c, board, visited, result, curr, currWord);
+        solve(r, c - 1, board, visited, result, curr, currWord);
+        solve(r, c + 1, board, visited, result, curr, currWord);
+        solve(r + 1, c, board, visited, result, curr, currWord);
 
         visited[r][c] = false;
-    }
-
-    private boolean isValid(int nr, int nc, int rows, int cols) {
-        if (nr < 0 || nr >= rows || nc < 0 || nc >= cols) {
-            return false;
-        }
-
-        return true;
+        currWord.deleteCharAt(currWord.length() - 1);
     }
 
     private void insert(String word) {
