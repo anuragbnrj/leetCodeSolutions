@@ -12,17 +12,16 @@ class Solution {
         int cols = board[0].length;
         boolean[][] visited = new boolean[rows][cols];
         Set<String> result = new HashSet<>();
-        StringBuilder currWord = new StringBuilder();
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
-                solve(r, c, board, visited, result, root, currWord);
+                solve(r, c, board, visited, result, root, "");
             }
         }
 
         return new ArrayList<>(result);
     }
 
-    private void solve(int r, int c, char[][] board, boolean[][] visited, Set<String> result, Node curr, StringBuilder currWord) {
+    private void solve(int r, int c, char[][] board, boolean[][] visited, Set<String> result, Node curr, String currWord) {
         int rows = board.length;
         int cols = board[0].length;
 
@@ -36,9 +35,9 @@ class Solution {
         }
         
         curr = curr.child[ch - 'a'];
-        currWord.append(ch);
+        currWord += ch;
         if (curr.endsAt == true) {
-            result.add(currWord.toString());
+            result.add(currWord);
         }
         
         visited[r][c] = true;
@@ -46,9 +45,7 @@ class Solution {
         solve(r, c - 1, board, visited, result, curr, currWord);
         solve(r, c + 1, board, visited, result, curr, currWord);
         solve(r + 1, c, board, visited, result, curr, currWord);
-
         visited[r][c] = false;
-        currWord.deleteCharAt(currWord.length() - 1);
     }
 
     private void insert(String word) {
