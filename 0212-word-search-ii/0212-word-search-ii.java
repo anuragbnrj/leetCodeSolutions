@@ -10,10 +10,10 @@ class Solution {
 
         int rows = board.length;
         int cols = board[0].length;
+        boolean[][] visited = new boolean[rows][cols];
         Set<String> result = new HashSet<>();
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
-                boolean[][] visited = new boolean[rows][cols];
                 solve(r, c, board, visited, result, root, "");
             }
         }
