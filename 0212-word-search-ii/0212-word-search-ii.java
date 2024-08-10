@@ -1,73 +1,86 @@
 class Solution {
-    Node root;
+    private int rows;
+    private int cols;
+    private char[][] board;
+    private Node root = new Node('\0');
 
     public List<String> findWords(char[][] board, String[] words) {
-        root = new Node();
+        this.rows = board.length;
+        this.cols = board[0].length;
+        this.board = board;
 
         for (String word : words) {
-            insert(word);
+            root.addWord(word);
         }
 
-        int rows = board.length;
-        int cols = board[0].length;
-        boolean[][] visited = new boolean[rows][cols];
-        Set<String> result = new HashSet<>();
-        for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < cols; c++) {
-                solve(r, c, board, visited, result, root, "");
+        List<String> result = new ArrayList<>();
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++){
+                dfs(result, row, col, new int[rows][cols], root, new StringBuilder());
             }
         }
-
-        return new ArrayList<>(result);
+        return result;
     }
 
-    private void solve(int r, int c, char[][] board, boolean[][] visited, Set<String> result, Node curr, String currWord) {
-        int rows = board.length;
-        int cols = board[0].length;
-
-        if (r < 0 || r >= rows || c < 0 || c >= cols || visited[r][c]) {
-            return;
-        }
-
-        char ch = board[r][c];
-        if (curr.child[ch - 'a'] == null) {
-            return;
+    private void dfs(List<String> result, int row, int col, int[][] visited, Node curr, StringBuilder word) {
+        if (row < 0 || col < 0 || row >= rows || col >= cols ||
+            visited[row][col] != 0 || curr.children[board[row][col] - 'a'] == null || 
+            curr.children[board[row][col] - 'a'].ref == 0) {
+                return;
         }
         
-        curr = curr.child[ch - 'a'];
-        currWord += ch;
-        if (curr.endsAt == true) {
-            result.add(currWord);
+        char c = board[row][col];
+        curr = curr.children[c - 'a'];
+        word.append(c);
+        visited[row][col] = 1;
+
+        if (curr.isWord) {
+            result.add(word.toString());
+            root.removeWord(word.toString());
+        }
+
+        int[][] directions = {{-1,0},{0,-1},{1,0},{0,1}};
+        for (int[] direction : directions) {
+            dfs(result, row + direction[0], col + direction[1], visited, curr, word);
         }
         
-        visited[r][c] = true;
-        solve(r - 1, c, board, visited, result, curr, currWord);
-        solve(r, c - 1, board, visited, result, curr, currWord);
-        solve(r, c + 1, board, visited, result, curr, currWord);
-        solve(r + 1, c, board, visited, result, curr, currWord);
-        visited[r][c] = false;
-    }
-
-    private void insert(String word) {
-        Node curr = root;
-        for (char ch : word.toCharArray()) {
-            if (curr.child[ch - 'a'] == null) {
-                curr.child[ch - 'a'] = new Node();
-            }
-
-            curr = curr.child[ch - 'a'];
-        }
-
-        curr.endsAt = true;
-    }
-
-    class Node {
-        Node[] child;
-        boolean endsAt;
-
-        public Node() {
-            child = new Node[26];
-            endsAt = false;
-        }
+        visited[row][col] = 0;
+        word.deleteCharAt(word.length() - 1);
     }
 }
+
+class Node {
+    char val;
+    Node[] children;
+    boolean isWord;
+    int ref;
+
+    public Node(char val) {
+        this.val = val;
+        this.children = new Node[26];
+        this.isWord = false;
+        this.ref = 0;
+    }
+
+    public void addWord(String word) {
+        Node curr = this;
+        for (char c : word.toCharArray()) {
+            if (curr.children[c - 'a'] == null) {
+                curr.children[c - 'a'] = new Node(c);
+            }
+            curr = curr.children[c - 'a'];
+            curr.ref++;
+        }
+        curr.isWord = true;
+    }
+
+    public void removeWord(String word){
+        Node curr = this;
+        for (char c : word.toCharArray()) {
+            curr = curr.children[c - 'a'];
+            curr.ref--;
+        }
+        curr.isWord = false;
+    }
+}
+    
