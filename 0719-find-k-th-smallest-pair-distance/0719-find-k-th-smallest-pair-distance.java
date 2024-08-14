@@ -22,18 +22,20 @@ class Solution {
         int n = nums.length;
 
         int pairs = 0;
-        for (int i = 0; i < n; i++) {
-            int find = nums[i] + delta;
-
-            int beg = i, end = n;
-            while (beg < end) {
-                int mid = beg + (end - beg) / 2;
-
-                if (nums[mid] <= find) beg = mid + 1;
-                else end = mid;
+        int head = -1, tail = 0;
+        while (tail < n) {
+            while ((head + 1) < n && (nums[head + 1] - nums[tail]) <= delta) {
+                head += 1;
             }
 
-            pairs += (beg - i) - 1;
+            pairs += (head - tail);
+
+            if (head < tail) {
+                tail += 1;
+                head = tail - 1;
+            } else {
+                tail += 1;
+            }
         }
 
         return pairs;
