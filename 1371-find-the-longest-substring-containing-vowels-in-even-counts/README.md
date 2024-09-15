@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts">1371. Find the Longest Substring Containing Vowels in Even Counts</a></h2><h3>Medium</h3><hr><p>Given the string <code>s</code>, return the size of the longest substring containing each vowel an even number of times. That is, &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, and &#39;u&#39; must appear an even number of times.</p>
+<h2><a href="https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/">1371. Find the Longest Substring Containing Vowels in Even Counts</a></h2><h3>Medium</h3><hr><p>Given the string <code>s</code>, return the size of the longest substring containing each vowel an even number of times. That is, &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, and &#39;u&#39; must appear an even number of times.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
