@@ -4,7 +4,6 @@ class Solution {
         int tot = 0;
         for (int i = 0; i < len; i++) {
             tot = (tot + nums[i]) % p;
-            nums[i] = nums[i] % p; 
         }
         int modReq = tot % p;
 
