@@ -15,35 +15,40 @@ class Solution {
             smaller = s1;
         }
 
-        int ptr1 = 0;
-        int ptr2 = 0;
-        boolean used = false;
-        while (ptr1 < larger.length && ptr2 < smaller.length) {
-            if (larger[ptr1].equals(smaller[ptr2])) {
-                ptr1 += 1;
-                ptr2 += 1;
+        int prefixMatches = getPrefixMatches(larger, smaller);
+        int suffixMatches = getSuffixMatches(larger, smaller);
+
+        if (prefixMatches + suffixMatches >= smaller.length) {
+            return true;
+        }
+
+        return false;
+        
+    }
+
+    private int getPrefixMatches(String[] text, String[] pattern) {
+        int matches = 0;
+        for (int ptr1 = 0, ptr2 = 0; ptr1 < text.length && ptr2 < pattern.length; ptr1++, ptr2++) {
+            if (!text[ptr1].equals(pattern[ptr2])) {
+                break;
             } else {
-                if (used) {
-                    return false;
-                } else {
-                    while (ptr1 < larger.length && !larger[ptr1].equals(smaller[ptr2])) {
-                        ptr1 += 1;
-                    }
-
-                    used = true;
-                }
+                matches += 1;
             }
         }
 
+        return matches;
+    }
 
-        if (ptr2 != smaller.length) {
-            return false;
-        } else {
-            if (used && ptr1 != larger.length) {
-                return false;
+    private int getSuffixMatches(String[] text, String[] pattern) {
+        int matches = 0;
+        for (int ptr1 = text.length - 1, ptr2 = pattern.length - 1; ptr1 >= 0 && ptr2 >= 0; ptr1--, ptr2--) {
+            if (!text[ptr1].equals(pattern[ptr2])) {
+                break;
+            } else {
+                matches += 1;
             }
         }
 
-        return true;
+        return matches;
     }
 }
