@@ -1,13 +1,11 @@
 class LRUCache {
-    private static int max_capacity;
     Map<Integer, Integer> kvStore;
 
     public LRUCache(int capacity) {
-        max_capacity = capacity;
         this.kvStore = new LinkedHashMap<>(capacity, 1.0F, true) {
             @Override
             protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
-                return size() > max_capacity;
+                return size() > capacity;
             }
         };    
     }
