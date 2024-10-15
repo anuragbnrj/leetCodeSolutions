@@ -4,7 +4,7 @@ class Solution {
         int[] suffixZeroes = new int[len + 1];
 
         int zeroCount = 0;
-        int ans = 0;
+        long ans = 0;
         for (int i = len - 1; i >= 0; i--) {
             char ch = s.charAt(i);
 
