@@ -1,34 +1,27 @@
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> st = new Stack<>();
+        Map<Character, Character> comp = new HashMap<>();
+        comp.put(')', '(');
+        comp.put('}', '{');
+        comp.put(']', '[');
 
         for (char ch : s.toCharArray()) {
             if (ch == '(' || ch == '{' || ch == '[') {
                 st.push(ch);
-            } else if (ch == ')') {
-                if (st.size() == 0 || st.peek() != '(') {
+            } else {
+                if (st.size() == 0) {
                     return false;
-                } else {
-                    st.pop();
                 }
-            } else if (ch == '}') {
-                if (st.size() == 0 || st.peek() != '{') {
-                    return false;
-                } else {
+
+                if (st.peek() == comp.get(ch)) {
                     st.pop();
-                }
-            } else if (ch == ']') {
-                if (st.size() == 0 || st.peek() != '[') {
-                    return false;
                 } else {
-                    st.pop();
+                    return false;
                 }
             }
         }
 
-        if (st.size() > 0) {
-            return false;
-        }
         return true;
     }
 }
