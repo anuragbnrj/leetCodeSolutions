@@ -1,31 +1,36 @@
 class Solution {
     public List<String> wordBreak(String s, List<String> wordDict) {
         Set<String> dict = new HashSet<>(wordDict);
-        List<String> res = new ArrayList<>();
-        
-        String word = "";
-        String sentence = "";
-        solve(0, s, dict, word, sentence, res);
+        List<String> ans = new ArrayList<>();
 
-        return res;
+        rec(0, s, "", new ArrayList<>(), dict, ans);
+        return ans;
     }
 
-    private void solve(int idx, String s, Set<String> dict, String word, String sentence, List<String> res) {
-        word += s.charAt(idx);
+    private void rec(int idx, String s, String prevWord, List<String> currentWords, Set<String> dict, List<String> ans) {
+        if (idx == s.length()) {
+            if (prevWord.length() == 0) {
+                StringBuilder sb = new StringBuilder();
+                for (int i = 0; i < currentWords.size() - 1; i++) {
+                    sb.append(currentWords.get(i));
+                    sb.append(" ");
+                }
+                sb.append(currentWords.get(currentWords.size() - 1));
 
-        int n = s.length();
-        if (idx == (n - 1)) {
-            if (dict.contains(word)) {
-                sentence += word;
-                res.add(sentence);
+                ans.add(sb.toString());
             }
+            
             return;
         }
 
-        if (dict.contains(word)) {
-            solve(idx + 1, s, dict, "", sentence + word + ' ', res);
+        char ch = s.charAt(idx);
+        String currWord = prevWord + ch;
+        if (dict.contains(currWord)) {
+            currentWords.add(currWord);
+            rec(idx + 1, s, "", currentWords, dict, ans);
+            currentWords.remove(currentWords.size() - 1);
         }
-        solve(idx + 1, s, dict, word, sentence, res);
-    }
 
+        rec(idx + 1, s, currWord, currentWords, dict, ans);
+    }
 }
