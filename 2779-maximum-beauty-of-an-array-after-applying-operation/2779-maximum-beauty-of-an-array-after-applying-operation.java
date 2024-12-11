@@ -13,14 +13,24 @@ class Solution {
 
         int ans = 0;
         for (int i = 0; i < nums.length; i++) {
-            int beg = Math.max(0, nums[i] - k);
-            int end = Math.min(len - 1, nums[i] + k);
+            ans = Math.max(ans, getCount(nums[i] - k - k, nums[i], freq));
+            ans = Math.max(ans, getCount(nums[i] - k, nums[i] + k, freq));
+            ans = Math.max(ans, getCount(nums[i], nums[i] + k + k, freq));
+        }
 
-            if (beg == 0) {
-                ans = Math.max(ans, freq[end]);
-            } else {
-                ans = Math.max(ans, freq[end] - freq[beg - 1]);
-            }
+        return ans;
+    }
+
+    private int getCount(int beg, int end, int[] freq) {
+        int ans = 0;
+
+        beg = Math.max(0, beg);
+        end = Math.min(freq.length - 1, end);
+
+        if (beg == 0) {
+            ans = Math.max(ans, freq[end]);
+        } else {
+           ans = Math.max(ans, freq[end] - freq[beg - 1]);
         }
 
         return ans;
