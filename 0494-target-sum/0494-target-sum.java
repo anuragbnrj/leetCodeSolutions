@@ -1,19 +1,25 @@
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
-        return rec(0, 0, nums, target);
+        Map<String, Integer> dp = new HashMap<>();
+        return rec(0, 0, nums, target, dp);
     }
 
-    private int rec(int idx, int currSum, int[] nums, int target) {
+    private int rec(int idx, int currSum, int[] nums, int target, Map<String, Integer> dp) {
         if (idx == nums.length) {
-            if (currSum == target) return 1;
+            return currSum == target ? 1 : 0;
+        }
 
-            return 0; 
+        String key = idx + "," + currSum;
+
+        if (dp.containsKey(key)) {
+            return dp.get(key);
         }
 
         int ans = 0;
-        ans += rec(idx + 1, -1 * nums[idx] + currSum, nums, target);
-        ans += rec(idx + 1, 1 * nums[idx] + currSum, nums, target);
+        ans += rec(idx + 1, currSum - nums[idx], nums, target, dp);
+        ans += rec(idx + 1, currSum + nums[idx], nums, target, dp);
 
+        dp.put(key, ans);
         return ans;
     }
 }
