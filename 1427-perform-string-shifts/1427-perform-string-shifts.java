@@ -13,13 +13,13 @@ class Solution {
             }
         }
 
-        
-
         char[] sarr = s.toCharArray();
         totalShift = ((totalShift % len) + len) % len;
+        System.out.println(totalShift);
+
         if (totalShift > 0) {
-            reverse(0, totalShift, sarr);
-            reverse(totalShift + 1, len - 1, sarr);
+            reverse(0, len - totalShift - 1, sarr);
+            reverse(len - totalShift, len - 1, sarr);
             reverse(0, len - 1, sarr);
         }
 
