@@ -4,8 +4,7 @@ class Solution {
 
     public int[] closestPrimes(int left, int right) {
         if (!primesPopulated) {
-            populatePrimes();
-            primesPopulated = true;
+            populatePrimes(right);
         }
 
         int num1 = -1;
@@ -43,12 +42,11 @@ class Solution {
                 }
             }
         }
+
         return ans;
-        
     }
 
-    private void populatePrimes() {
-        int n = (int) 1e6 + 7;
+    private void populatePrimes(int n) {
         isPrime = new boolean[n + 1];
         Arrays.fill(isPrime, true);
         isPrime[0] = false;
