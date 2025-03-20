@@ -12,7 +12,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             parent[i] = i;
             size[i] = 1;
-            bitwiseAND[i] = 1;
+            bitwiseAND[i] = Integer.MAX_VALUE;
         }
     }
 
