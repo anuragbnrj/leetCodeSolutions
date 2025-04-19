@@ -2,7 +2,6 @@ class Solution {
     public long countFairPairs(int[] nums, int lower, int upper) {
         int len = nums.length;
         Arrays.sort(nums);
-        System.out.println(Arrays.toString(nums));
 
         long ans = 0;
         for (int i = 0; i < len; i++) {
@@ -10,8 +9,6 @@ class Solution {
 
             int gteIdx = getFirstIdxGreaterThanEqual(nums, lower - curr);
             int lteIdx = getLastIdxLesserThanEqual(nums, upper - curr);
-
-            // System.out.println("lower: " + lower + ", upper: " + upper + ", idx: " + i + ", curr: " + curr + ", gteIdx: " + gteIdx + ", lteIdx: " + lteIdx);
 
             int i1left = 0, i1right = lteIdx;
             int i2left = gteIdx, i2right = len - 1;
