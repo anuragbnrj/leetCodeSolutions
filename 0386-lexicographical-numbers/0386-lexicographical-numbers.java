@@ -2,22 +2,26 @@ class Solution {
     public List<Integer> lexicalOrder(int n) {
         List<Integer> ans = new ArrayList<>();
 
-        solve(0, n, ans);
+        for (int i = 1; i <= 9; i++) {
+            generateNumbers(Integer.toString(i), n, ans);
+        }
+        
         return ans;
     }
 
-    private void solve(int curr, int n, List<Integer> ans) {
-        if (curr > n) {
+    private void generateNumbers(String curr, int maxNum, List<Integer> ans) {
+        int currNum = Integer.parseInt(curr);
+
+        if (currNum > maxNum || currNum == 0) {
             return;
         }
 
+        if (currNum != 0) {
+            ans.add(currNum);
+        }
+
         for (int i = 0; i <= 9; i++) {
-            if ((curr + i) != 0 && (curr + i) <= n) {
-                ans.add(curr + i);
-                solve((curr + i) * 10, n, ans);
-            }
-            
-            
+            generateNumbers(curr + i, maxNum, ans);
         }
     }
 }
