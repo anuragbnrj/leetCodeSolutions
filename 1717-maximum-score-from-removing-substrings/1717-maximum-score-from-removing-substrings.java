@@ -18,7 +18,7 @@ class Solution {
                 }
             }
 
-            StringBuffer temp = new StringBuffer();
+            StringBuilder temp = new StringBuilder();
             while (st.size() > 0) {
                 char top = st.peek();
                 st.pop();
@@ -55,7 +55,7 @@ class Solution {
                 }
             }
 
-            StringBuffer temp = new StringBuffer();
+            StringBuilder temp = new StringBuilder();
             while (st.size() > 0) {
                 char top = st.peek();
                 st.pop();
