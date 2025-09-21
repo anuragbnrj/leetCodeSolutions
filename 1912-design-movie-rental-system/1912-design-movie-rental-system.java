@@ -1,11 +1,11 @@
 class MovieRentingSystem {
 
-    PriorityQueue<MovieEntry> cheapestMovies;
+    TreeSet<MovieEntry> rentedMovies;
     Map<Integer, TreeSet<MovieEntry>> movieSellerMap;
     Map<Integer, HashMap<Integer, Integer>> shopMoviePriceMap;
 
     public MovieRentingSystem(int n, int[][] entries) {
-        cheapestMovies = new PriorityQueue<>((a, b) -> {
+        rentedMovies = new TreeSet<>((a, b) -> {
             int priceCompare = Integer.compare(a.price, b.price);
             if (priceCompare != 0) return priceCompare;
 
@@ -64,7 +64,7 @@ class MovieRentingSystem {
         TreeSet<MovieEntry> movieSellerTreeSet = movieSellerMap.get(movie);
         movieSellerTreeSet.remove(movieEntry);
         movieSellerMap.put(movie, movieSellerTreeSet);
-        cheapestMovies.add(movieEntry);
+        rentedMovies.add(movieEntry);
     }
 
     public void drop(int shop, int movie) {
@@ -74,26 +74,15 @@ class MovieRentingSystem {
         TreeSet<MovieEntry> movieSellerTreeSet = movieSellerMap.get(movie);
         movieSellerTreeSet.add(movieEntry);
         movieSellerMap.put(movie, movieSellerTreeSet);
+        rentedMovies.remove(movieEntry);
     }
 
     public List<List<Integer>> report() {
         List<List<Integer>> ans = new ArrayList<>();
-        List<MovieEntry> poppedRentedEntryList = new ArrayList<>();
-        int count = 0;
-        while (!cheapestMovies.isEmpty() && count < 5) {
-            MovieEntry topEntry = cheapestMovies.poll();
-
-            TreeSet<MovieEntry> movieSellerTreeSet = movieSellerMap.get(topEntry.movie);
-            if (!movieSellerTreeSet.contains(topEntry)) {
-                poppedRentedEntryList.add(topEntry);
-
-                ans.add(List.of(topEntry.shop, topEntry.movie));
-                count += 1;
-            }
-        }
-
-        for (MovieEntry poppedRentedEntry : poppedRentedEntryList) {
-            cheapestMovies.add(poppedRentedEntry);
+        Iterator<MovieEntry> it = rentedMovies.iterator();
+        for (int i = 0; i < 5 && it.hasNext(); i++) {
+            MovieEntry movieEntry = it.next();
+            ans.add(List.of(movieEntry.shop, movieEntry.movie));
         }
 
         return ans;
