@@ -1,5 +1,5 @@
 class Bank {
-    long[] balance;
+    private final long[] balance;
 
     public Bank(long[] bal) {
         int len = bal.length + 1;
