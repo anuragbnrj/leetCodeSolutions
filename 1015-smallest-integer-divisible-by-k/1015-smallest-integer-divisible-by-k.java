@@ -2,7 +2,7 @@ class Solution {
     public int smallestRepunitDivByK(int k) {
         int currLen = 1;
         long currNum = 1L;
-        for (; currLen <= 20005; currLen++) {
+        for (; currLen <= 200005; currLen++) {
             if (currNum % k == 0) {
                 return currLen;
             }
