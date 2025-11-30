@@ -1,33 +1,33 @@
 class Solution {
     public int minSubarray(int[] nums, int p) {
-        int len = nums.length;
-        int tot = 0;
-        for (int i = 0; i < len; i++) {
-            tot = (tot + nums[i]) % p;
+        long totSum = 0;
+        long mod = 0;
+        for (int num : nums) {
+            totSum += num; 
         }
-        int modReq = tot % p;
+        mod = totSum % p;
+        // System.out.println("mod: " + mod);
+        if (mod == 0) return 0;
 
-        if (modReq == 0) return 0;
+        Map<Long, Integer> lastModPos = new HashMap<>();
+        lastModPos.put(0L, -1);
+        long currSum = 0;
+        int ans = Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            currSum += nums[i];
+            long currMod = currSum % p;
+            // System.out.println("currMod: " + currMod);
+            long req = (((currMod - mod) % p) + p) % p;
+            // System.out.println("req: " + req);
 
-        int minLen = (int) 1e9;
-        TreeMap<Integer, Integer> prevModOccur = new TreeMap<>();
-        prevModOccur.put(0, -1);
-        int currSumMod = 0;
-        for (int i = 0; i < len; i++) {
-            currSumMod = (currSumMod + nums[i]) % p;
-            int prevMod = (((currSumMod - modReq) % p) + p) % p;
-
-            if (prevModOccur.containsKey(prevMod)) {
-                minLen = Math.min(minLen, (i - prevModOccur.get(prevMod)));
+            if (lastModPos.containsKey(req)) {
+                ans = Math.min(ans, i - lastModPos.get(req));
             }
 
-            prevModOccur.put(currSumMod, i);
+            lastModPos.put(currMod, i);
+            // System.out.println("==============================");
         }
 
-        if (minLen == len) {
-            return -1;
-        }
-
-        return minLen;
+        return ans == Integer.MAX_VALUE || ans == nums.length ? -1 : ans;
     }
 }
