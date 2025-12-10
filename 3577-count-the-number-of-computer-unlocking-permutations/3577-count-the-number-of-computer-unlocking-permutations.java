@@ -5,19 +5,11 @@ class Solution {
         int len = complexity.length;
 
         int zeroComplexity = complexity[0];
-        int minComplexity = complexity[0];
-        int minComplexityFreq = 1;
         for (int i = 1; i < len; i++) {
             int curr = complexity[i];
-            if (curr < minComplexity) {
-                minComplexity = complexity[i];
-            } else if (curr == minComplexity) {
+            if (curr <= zeroComplexity) {
                 return 0;
             }
-        }
-
-        if (zeroComplexity != minComplexity) {
-            return 0;
         }
 
         long ans = 1;
