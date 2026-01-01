@@ -1,30 +1,26 @@
 class Solution {
     public int[] plusOne(int[] digits) {
         int len = digits.length;
-        List<Integer> ans = new ArrayList<>();
 
         int carry = 1;
         for (int i = len - 1; i >= 0; i--) {
             int sum = digits[i] + carry;
-            
-            if (sum >= 10) {
-                carry = sum / 10;
-                ans.add(sum % 10);
-            } else {
-                carry = 0;
-                ans.add(sum);
-            }
+
+            carry = sum / 10;
+
+            digits[i] = sum % 10;
         }
-        if (carry > 0) {
-            ans.add(carry);
+        
+        if (carry == 0) {
+            return digits;
         }
 
-        Collections.reverse(ans);
-        int[] res = new int[ans.size()];
-        for (int i = 0; i < ans.size(); i++) {
-            res[i] = ans.get(i);
+        int[] ans = new int[len + 1];
+        ans[0] = carry;
+        for (int i = 1; i < len + 1; i++) {
+            ans[i] = digits[i - 1];
         }
 
-        return res;
+        return ans;
     }
 }
