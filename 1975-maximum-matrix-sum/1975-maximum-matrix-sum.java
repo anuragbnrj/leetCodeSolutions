@@ -3,25 +3,32 @@ class Solution {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        List<Long> list = new ArrayList<>();
-        int negCount = 0;
+        List<Integer> elements = new ArrayList<>();
+        int ctr = 0;
+        int zeroes = 0;
+        long ans = 0;
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
-                if (matrix[r][c] < 0) {
-                    negCount++;
+                int curr = matrix[r][c];
+                if (curr < 0) {
+                    ctr += 1;
+                    elements.add(curr * -1);
+                } else if (curr == 0) {
+                    zeroes += 1;
+                    elements.add(curr);
+                } else {
+                    elements.add(curr);
                 }
-
-                list.add((long) Math.abs(matrix[r][c]));
             }
         }
 
-        Collections.sort(list);
-        long ans = 0;
-        for (int i = 0; i < list.size(); i++) {
-            if (i == 0 && negCount % 2 == 1) {
-                ans -= list.get(i);             
+        ctr = Math.max(0, ctr - zeroes);
+        Collections.sort(elements);
+        for (int i = 0; i < elements.size(); i++) {
+            if (i == 0 && ctr % 2 == 1) {
+                ans += (-1L * elements.get(i));
             } else {
-                ans += list.get(i);
+                ans += (1L * elements.get(i));
             }
         }
 
