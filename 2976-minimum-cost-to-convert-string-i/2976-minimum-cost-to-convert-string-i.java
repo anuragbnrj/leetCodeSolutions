@@ -1,47 +1,83 @@
 class Solution {
-    int INF = 1_000_000_000;
-    long INFL = (long)1e18;
-
     public long minimumCost(String source, String target, char[] original, char[] changed, int[] cost) {
-        int n = 26;
-        long[][] dist = new long[n][n];
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i != j) {
-                    dist[i][j] = INFL;
-                }
-            }
+        List<List<Edge>> adjList = new ArrayList<>();
+        for (int i = 0; i < 26; i++) {
+            adjList.add(new ArrayList<>());
         }
 
-        int l = original.length;
-        for (int i = 0; i < l; i++) {
-            int u = original[i] - 'a';
-            int v = changed[i] - 'a';
-            int wt = cost[i];
-
-            dist[u][v] = Math.min(dist[u][v], wt); 
+        int len = original.length;
+        for (int i = 0; i < len; i++) {
+            char curr = original[i];
+            char next = changed[i];
+            int weight = cost[i];
+            adjList.get(curr - 'a').add(new Edge(next, weight));
         }
 
-        for (int k = 0; k < n; k++) {
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
-                }
-            }
-        }
-
+        len = source.length();
         long ans = 0;
-        for (int i = 0; i < source.length(); i++) {
-            int u = source.charAt(i) - 'a';
-            int v = target.charAt(i) - 'a';
+        HashMap<String, Long> cache = new HashMap<>();
+        for (int i = 0; i < len; i++) {
+            char src = source.charAt(i);
+            char des = target.charAt(i);
+            if (src == des) continue;
 
-            if (dist[u][v] == INFL) {
-                return -1;
+            String key = src + "-" + des;
+            if (cache.containsKey(key)) {
+                ans += cache.get(key);
+                continue;
             }
 
-            ans += dist[u][v];
+            long minCostToDes = minCost(src, des, adjList);
+            if (minCostToDes == -1) return -1;
+
+            cache.put(key, minCostToDes);
+
+            ans += minCostToDes;
         }
 
         return ans;
+    }
+
+    private long minCost(char src, char des, List<List<Edge>> adjList) {
+        long[] minCost = new long[26];
+        Arrays.fill(minCost, Long.MAX_VALUE);
+
+        PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> {
+            return Long.compare(a.cost, b.cost);
+        });
+        pq.offer(new Edge(src, 0));
+        minCost[src - 'a'] = 0;
+
+        while (!pq.isEmpty()) {
+            Edge top = pq.poll();
+            char currNode = top.node;
+            long costToCurr = top.cost;
+
+            if (currNode == des) {
+                return costToCurr;
+            }
+
+            for (Edge neigh : adjList.get(currNode - 'a')) {
+                char nextNode = neigh.node;
+                long weight = neigh.cost;
+
+                if (costToCurr + weight < minCost[nextNode - 'a']) {
+                    pq.offer(new Edge(nextNode, costToCurr + weight));
+                    minCost[nextNode - 'a'] = costToCurr + weight;
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    static class Edge {
+        char node;
+        long cost;
+
+        public Edge(char _node, long _cost) {
+            node = _node;
+            cost = _cost;
+        }
     }
 }
