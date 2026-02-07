@@ -18,16 +18,14 @@ class Solution {
         int bBeg = 0;
         int ans = Integer.MAX_VALUE;
         for (int i = 0; i < len; i++) {
-            int deletions = 0;
+            int deletions = bBeg + aEnd[i + 1];
+            ans = Math.min(ans, deletions);
+
             if (s.charAt(i) == 'a') {
-                deletions += bBeg + aEnd[i + 1];
                 aBeg += 1;
             } else {
-                deletions += bBeg + aEnd[i + 1];
                 bBeg += 1;
             }
-
-            ans = Math.min(ans, deletions);
         }
 
         return ans;
