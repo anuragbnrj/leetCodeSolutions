@@ -15,32 +15,27 @@
  */
 class Solution {
     public boolean isBalanced(TreeNode root) {
-        Pair temp = isHeightBalanced(root);
-        return temp.isHB;
+        int ans = isHeightBal(root);
+
+        if (ans == -1) {
+            return false;
+        }
+
+        return true;
     }
 
-    private Pair isHeightBalanced(TreeNode root) {
+    private int isHeightBal(TreeNode root) {
         if (root == null) {
-            return new Pair(0, true);
+            return 0;
         }
 
-        Pair left = isHeightBalanced(root.left);
-        Pair right = isHeightBalanced(root.right);
+        int leftHeight = isHeightBal(root.left);
+        if (leftHeight == -1) return -1;
+        int rightHeight = isHeightBal(root.right);
+        if (rightHeight == -1) return -1;
 
-        if (Math.abs(left.height - right.height) <= 1 && left.isHB && right.isHB) {
-            return new Pair(Math.max(left.height, right.height) + 1, true);
-        }
+        if (Math.abs(leftHeight - rightHeight) > 1) return -1;
 
-        return new Pair(Math.max(left.height, right.height) + 1, false);
-    }
-
-    class Pair {
-        int height;
-        boolean isHB;
-
-        public Pair(int _height, boolean _isHB) {
-            height = _height;
-            isHB = _isHB;
-        }
+        return Math.max(leftHeight, rightHeight) + 1;
     }
 }
