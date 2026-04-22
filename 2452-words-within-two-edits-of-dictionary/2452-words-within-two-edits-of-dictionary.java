@@ -1,7 +1,5 @@
 class Solution {
     public List<String> twoEditWords(String[] queries, String[] dictionary) {
-        int size = queries.length;
-
         List<String> ans = new ArrayList<>();
         for (String query : queries) {
             for (String word : dictionary) {
