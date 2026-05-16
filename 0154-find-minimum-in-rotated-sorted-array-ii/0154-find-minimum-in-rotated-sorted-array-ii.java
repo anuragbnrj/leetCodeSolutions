@@ -10,8 +10,6 @@ class Solution {
             else if (nums[mid] == nums[end]) end -= 1;
             else end = mid;
         }
-
-        if (beg == nums.length) return nums[0];
         
         return nums[beg];
     }
