@@ -1,43 +1,32 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        int n = nums.length;
-        HashMap<Integer, Integer> freq = new HashMap<>();
+        Map<Integer, Integer> freq = new HashMap<>();
 
-        for (int el : nums) {
-            Integer count = freq.getOrDefault(el, 0);
-            count++;
-
-            freq.put(el, count);
+        for (int num : nums) {
+            freq.merge(num, 1, (oldVal, newVal) -> oldVal + newVal);
         }
 
-        List<Pair<Integer, Integer>> freqList = new ArrayList<>();
-        freq.forEach((key, v) -> {
-            freqList.add(new Pair(v, key));
+        // System.out.println(freq.toString());
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> {
+            return Integer.compare(a[1], b[1]);
         });
-        Collections.sort(freqList, (p1, p2) -> {
-            if (p1.first == p2.first) {
-                return p2.second.compareTo(p1.second);
-            } else {
-                return p2.first.compareTo(p1.first);
-            }
-        });
+        for (Map.Entry<Integer, Integer> entry : freq.entrySet()) {
+            int key = entry.getKey();
+            int value = entry.getValue();
 
-        int[] res = new int[k];
-        for (int i = 0; i < k; i++) {
-            var el = freqList.get(i);
-            res[i] = el.second;
+            pq.offer(new int[]{key, value});
+
+            if (pq.size() > k) pq.poll();
         }
 
-        return res;
-    }
-}
+        int[] ans = new int[k];
+        int idx = 0;
+        while (!pq.isEmpty()) {
+            int[] top = pq.poll();
 
-class Pair<A, B> {
-    A first;
-    B second;
+            ans[idx++] = top[0];
+        }
 
-    public Pair(A first, B second) {
-        this.first = first;
-        this.second = second;
+        return ans;
     }
 }
