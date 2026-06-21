@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
+| [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
@@ -128,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0049-group-anagrams/) | Medium |
+| [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0657-robot-return-to-origin/) | Easy |
 | [0796-rotate-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0796-rotate-string/) | Easy |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
@@ -297,6 +299,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [1622-fancy-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1622-fancy-sequence/) | Hard |
 | [2069-walking-robot-simulation-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2069-walking-robot-simulation-ii/) | Medium |
 ## Segment Tree
