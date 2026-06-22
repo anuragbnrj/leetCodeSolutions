@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0048-rotate-image](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0049-group-anagrams/) | Medium |
+| [0128-longest-consecutive-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
@@ -210,6 +211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0049-group-anagrams/) | Medium |
+| [0128-longest-consecutive-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
@@ -380,6 +382,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
