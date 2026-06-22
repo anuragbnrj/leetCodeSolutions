@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
@@ -288,6 +289,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0154-find-minimum-in-rotated-sorted-array-ii/) | Hard |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2540-minimum-common-value/) | Easy |
 | [3161-block-placement-queries](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3161-block-placement-queries/) | Hard |
@@ -347,6 +349,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0061-rotate-list](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0061-rotate-list/) | Medium |
 | [0125-valid-palindrome](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0125-valid-palindrome/) | Easy |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0167-two-sum-ii-input-array-is-sorted/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [1861-rotating-the-box](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1861-rotating-the-box/) | Medium |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
