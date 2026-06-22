@@ -1,11 +1,6 @@
 class Solution {
     public int maxNumberOfBalloons(String text) {
-        Map<Character, Integer> balloonFreq = new HashMap<>();
-        balloonFreq.put('b', 1);
-        balloonFreq.put('a', 1);
-        balloonFreq.put('l', 2);
-        balloonFreq.put('o', 2);
-        balloonFreq.put('n', 1);
+        Map<Character, Integer> balloonFreq = Map.of('b', 1, 'a', 1, 'l', 2, 'o', 2, 'n', 1);
 
         int[] freq = new int[26];
         for (char ch : text.toCharArray()) {
@@ -23,6 +18,6 @@ class Solution {
             ans = Math.min(ans, possible);
         }
 
-        return ans == 100005 ? 0 : ans;
+        return ans;
     }
 }
