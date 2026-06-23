@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
+| [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1094-car-pooling](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1094-car-pooling/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
@@ -112,6 +113,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0048-rotate-image/) | Medium |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
+| [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -383,6 +385,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
+| [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -394,6 +397,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
+| [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1722-minimize-hamming-distance-after-swap-operations/) | Medium |
@@ -417,6 +421,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
+| [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
