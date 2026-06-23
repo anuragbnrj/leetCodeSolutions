@@ -19,32 +19,26 @@ class Node {
 */
 
 class Solution {
-
     public Node cloneGraph(Node node) {
-        if (node == null) return null;
+        Node parent = new Node(-1);
 
-        Map<Integer, Node> nodeMap = new HashMap<>();
-        Queue<Node> q = new LinkedList<>();
-        q.add(node);
-
-        Node cloneHead = new Node(node.val);
-        nodeMap.put(cloneHead.val, cloneHead);
-
-        while (!q.isEmpty()) {
-            Node front = q.poll();
-            Node clonedNode = nodeMap.get(front.val);
-
-            for (Node neighbor : front.neighbors) {
-                if (!nodeMap.containsKey(neighbor.val)) {
-                    Node clonedNeighbor = new Node(neighbor.val);
-                    nodeMap.put(clonedNeighbor.val, clonedNeighbor);
-                    q.add(neighbor);
-                }
-                clonedNode.neighbors.add(nodeMap.get(neighbor.val));
-            }
-        }
-        
-        return cloneHead;     
+        return dfs(node, parent, new HashMap<>());
     }
 
+    private Node dfs(Node curr, Node parent, Map<Integer, Node> nodeMap) {
+        if (curr == null) return null;
+
+        Node currCopy = new Node(curr.val);
+        nodeMap.put(curr.val, currCopy);        
+        for (Node neigh : curr.neighbors) {
+            if (!nodeMap.containsKey(neigh.val)) {
+                Node neighCopy = dfs(neigh, curr, nodeMap);
+                currCopy.neighbors.add(neighCopy);
+            } else {
+                currCopy.neighbors.add(nodeMap.get(neigh.val));
+            }
+        }
+
+        return currCopy;
+    }
 }
