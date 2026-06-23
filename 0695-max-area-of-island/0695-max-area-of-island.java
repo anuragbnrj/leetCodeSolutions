@@ -4,50 +4,53 @@ class Solution {
         int cols = grid[0].length;
 
         boolean[][] visited = new boolean[rows][cols];
-        int[][] gridNumber = new int[rows][cols];
-        int islandNumber = 0;
+        int maxArea = 0;
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 if (!visited[r][c] && grid[r][c] == 1) {
-                    islandNumber += 1;
-                    dfs(r, c, rows, cols, grid, visited, gridNumber, islandNumber);
+                    int area = bfs(grid, r, c, visited);
+                    maxArea = Math.max(maxArea, area);
                 }
             }
         }
-
-        int[] gridArea = new int[islandNumber + 1];
-        int ans = 0;
-        for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < cols; c++) {
-                if (grid[r][c] != 0) {
-                    gridArea[gridNumber[r][c]] += 1;
-                    ans = Math.max(ans, gridArea[gridNumber[r][c]]);
-                }
-            }
-        }
-
-        return ans;
+        
+        return maxArea;
     }
 
-    private void dfs(int r, int c, int rows, int cols, int[][] grid, boolean[][] visited, int[][] gridNumber, int islandNumber) {
-        visited[r][c] = true;
-        gridNumber[r][c] = islandNumber;
-
+    private int bfs(int[][] grid, int r, int c, boolean[][] visited) {
         int[] dr = {-1, 0, 0, 1};
         int[] dc = {0, -1, 1, 0};
 
-        for (int i = 0; i < 4; i++) {
-            int nr = r + dr[i];
-            int nc = c + dc[i];
+        int area = 0;
 
-            if (isValid(nr, nc, rows, cols) && !visited[nr][nc] && grid[nr][nc] == 1) {
-                dfs(nr, nc, rows, cols, grid, visited, gridNumber, islandNumber);
+        Queue<int[]> q = new LinkedList<>();
+        q.offer(new int[]{r, c});
+        visited[r][c] = true;
+        area += 1;
+
+        while (!q.isEmpty()) {
+            int[] front = q.poll();
+
+            int row = front[0];
+            int col = front[1];
+
+            for (int i = 0; i < 4; i++) {
+                int nr = row + dr[i];
+                int nc = col + dc[i];
+
+                if (isValid(nr, nc, grid.length, grid[0].length) && !visited[nr][nc] && grid[nr][nc] == 1) {
+                    q.offer(new int[]{nr, nc});
+                    visited[nr][nc] = true;
+                    area += 1;
+                }
             }
-        } 
+        }
+
+        return area;
     }
 
-    private boolean isValid(int nr, int nc, int rows, int cols) {
-        if (nr < 0 || nr >= rows || nc < 0 || nc >= cols) {
+    private boolean isValid(int r, int c, int rows, int cols) {
+        if (r < 0 || r >= rows || c < 0 || c >= cols) {
             return false;
         }
 
