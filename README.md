@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1094-car-pooling](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1094-car-pooling/) | Medium |
+| [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1340-jump-game-v](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1340-jump-game-v/) | Hard |
 | [1345-jump-game-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1345-jump-game-iv/) | Hard |
@@ -126,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0286-walls-and-gates](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0286-walls-and-gates/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
+| [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -208,6 +210,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
 | [0788-rotated-digits](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0788-rotated-digits/) | Medium |
+| [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1340-jump-game-v](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1340-jump-game-v/) | Hard |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
