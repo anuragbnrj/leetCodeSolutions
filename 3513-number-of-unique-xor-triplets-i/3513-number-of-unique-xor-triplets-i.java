@@ -5,15 +5,12 @@ class Solution {
         if (len <= 2) {
             return len;
         } else {
-            int temp = len;
+            int ans = 1;
 
-            int msb = 0;
-            while (temp > 0) {
-                msb += 1;
-                temp = temp >> 1;
+            while (ans <= len) {
+                ans <<= 1;
             }
-
-            return (int) Math.pow(2, msb);
+            return ans;
         }
         
     }
