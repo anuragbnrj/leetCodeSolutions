@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1094-car-pooling](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1094-car-pooling/) | Medium |
 | [1140-stone-game-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1140-stone-game-ii/) | Medium |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1288-remove-covered-intervals](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
@@ -194,6 +195,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0796-rotate-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0796-rotate-string/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
@@ -306,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1331-rank-transform-of-an-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1345-jump-game-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
@@ -548,6 +551,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0133-clone-graph/) | Medium |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -598,6 +602,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0286-walls-and-gates](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0286-walls-and-gates/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -641,6 +646,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3558-number-of-ways-to-assign-edge-weights-i/) | Medium |
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
@@ -737,4 +743,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
+## Binary Lifting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
+## Lowest Common Ancestor
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 <!---LeetCode Topics End-->
