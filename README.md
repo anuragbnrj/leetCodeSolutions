@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0286-walls-and-gates](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0286-walls-and-gates/) | Medium |
+| [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
@@ -157,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0048-rotate-image/) | Medium |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
 | [0286-walls-and-gates](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0286-walls-and-gates/) | Medium |
+| [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
@@ -453,12 +455,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
+| [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [1622-fancy-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1622-fancy-sequence/) | Hard |
 | [2069-walking-robot-simulation-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2069-walking-robot-simulation-ii/) | Medium |
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
 | [1622-fancy-sequence](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1622-fancy-sequence/) | Hard |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2213-longest-substring-of-one-repeating-character/) | Hard |
 | [3161-block-placement-queries](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3161-block-placement-queries/) | Hard |
@@ -623,6 +627,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Indexed Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
 | [3161-block-placement-queries](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3161-block-placement-queries/) | Hard |
 ## Enumeration
 | Problem Name | Difficulty |
@@ -728,4 +733,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2213-longest-substring-of-one-repeating-character/) | Hard |
+## Sqrt Decomposition
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
 <!---LeetCode Topics End-->
