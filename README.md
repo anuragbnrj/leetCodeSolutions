@@ -205,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0657-robot-return-to-origin/) | Easy |
 | [0796-rotate-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0796-rotate-string/) | Easy |
+| [0800-similar-rgb-color](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0800-similar-rgb-color/) | Easy |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
@@ -413,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0788-rotated-digits](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0788-rotated-digits/) | Medium |
+| [0800-similar-rgb-color](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0800-similar-rgb-color/) | Easy |
 | [0877-stone-game](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0877-stone-game/) | Medium |
 | [1140-stone-game-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1140-stone-game-ii/) | Medium |
 | [1344-angle-between-hands-of-a-clock](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1344-angle-between-hands-of-a-clock/) | Medium |
@@ -676,6 +678,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Enumeration
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0800-similar-rgb-color](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0800-similar-rgb-color/) | Easy |
 | [1291-sequential-digits](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1291-sequential-digits/) | Medium |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3020-find-the-maximum-number-of-elements-in-subset/) | Medium |
 | [3345-smallest-divisible-digit-product-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
