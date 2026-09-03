@@ -74,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2161-partition-array-according-to-given-pivot](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2213-longest-substring-of-one-repeating-character/) | Hard |
+| [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
 | [2452-words-within-two-edits-of-dictionary](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
@@ -296,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1871-jump-game-vii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1871-jump-game-vii/) | Medium |
 | [1872-stone-game-viii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1872-stone-game-viii/) | Hard |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1888-minimum-number-of-flips-to-make-the-binary-string-alternating/) | Medium |
+| [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
 | [2463-minimum-total-distance-traveled](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2770-maximum-number-of-jumps-to-reach-the-last-index/) | Medium |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3130-find-all-possible-stable-binary-arrays-ii/) | Hard |
@@ -583,6 +585,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
+| [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
 | [2751-robot-collisions](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2751-robot-collisions/) | Hard |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -755,6 +758,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
 ## Randomized
 | Problem Name | Difficulty |
 | ------- | ------- |
