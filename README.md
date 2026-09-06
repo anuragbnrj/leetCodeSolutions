@@ -208,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0049-group-anagrams/) | Medium |
+| [0115-distinct-subsequences](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0115-distinct-subsequences/) | Hard |
 | [0125-valid-palindrome](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0125-valid-palindrome/) | Easy |
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0657-robot-return-to-origin/) | Easy |
@@ -283,6 +284,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0115-distinct-subsequences](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0115-distinct-subsequences/) | Hard |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
