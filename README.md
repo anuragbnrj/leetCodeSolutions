@@ -55,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1727-largest-submatrix-with-rearrangements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1732-find-the-highest-altitude/) | Easy |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1752-check-if-array-is-sorted-and-rotated/) | Easy |
+| [1762-buildings-with-an-ocean-view](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1762-buildings-with-an-ocean-view/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1833-maximum-ice-cream-bars/) | Medium |
 | [1840-maximum-building-height](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1840-maximum-building-height/) | Hard |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1846-maximum-element-after-decreasing-and-rearranging/) | Medium |
@@ -627,6 +628,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1762-buildings-with-an-ocean-view](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1762-buildings-with-an-ocean-view/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 | [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
 | [2751-robot-collisions](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2751-robot-collisions/) | Hard |
@@ -808,6 +810,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
+| [1762-buildings-with-an-ocean-view](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1762-buildings-with-an-ocean-view/) | Medium |
 | [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
 ## Randomized
 | Problem Name | Difficulty |
