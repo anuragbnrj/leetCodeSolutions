@@ -232,6 +232,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1096-brace-expansion-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1096-brace-expansion-ii/) | Hard |
 | [1189-maximum-number-of-balloons](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1320-minimum-distance-to-type-a-word-using-two-fingers/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
@@ -649,6 +650,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1081-smallest-subsequence-of-distinct-characters/) | Medium |
 | [1096-brace-expansion-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1096-brace-expansion-ii/) | Hard |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1762-buildings-with-an-ocean-view](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1762-buildings-with-an-ocean-view/) | Medium |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2130-maximum-twin-sum-of-a-linked-list/) | Medium |
 | [2355-maximum-number-of-books-you-can-take](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2355-maximum-number-of-books-you-can-take/) | Hard |
@@ -893,4 +895,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 <!---LeetCode Topics End-->
