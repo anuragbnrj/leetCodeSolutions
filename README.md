@@ -226,6 +226,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0125-valid-palindrome](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0125-valid-palindrome/) | Easy |
 | [0271-encode-and-decode-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0271-encode-and-decode-strings/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0657-robot-return-to-origin/) | Easy |
+| [0751-ip-to-cidr](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0751-ip-to-cidr/) | Medium |
 | [0796-rotate-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0796-rotate-string/) | Easy |
 | [0800-similar-rgb-color](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0800-similar-rgb-color/) | Easy |
 | [0940-distinct-subsequences-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0940-distinct-subsequences-ii/) | Hard |
@@ -451,6 +452,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
+| [0751-ip-to-cidr](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0751-ip-to-cidr/) | Medium |
 | [1009-complement-of-base-10-integer](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1009-complement-of-base-10-integer/) | Easy |
 | [1386-cinema-seat-allocation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1386-cinema-seat-allocation/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2657-find-the-prefix-common-array-of-two-arrays/) | Medium |
