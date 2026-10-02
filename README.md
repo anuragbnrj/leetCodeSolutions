@@ -224,6 +224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0020-valid-parentheses/) | Easy |
+| [0022-generate-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0049-group-anagrams](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0049-group-anagrams/) | Medium |
 | [0115-distinct-subsequences](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0115-distinct-subsequences/) | Hard |
 | [0125-valid-palindrome](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0125-valid-palindrome/) | Easy |
@@ -313,6 +314,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0115-distinct-subsequences](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0115-distinct-subsequences/) | Hard |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
@@ -422,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
 | [1096-brace-expansion-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1096-brace-expansion-ii/) | Hard |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
@@ -910,6 +913,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0020-valid-parentheses/) | Easy |
+| [0022-generate-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0022-generate-parentheses/) | Medium |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1111-maximum-nesting-depth-of-two-valid-parentheses-strings/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
