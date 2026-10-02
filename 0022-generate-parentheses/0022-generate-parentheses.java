@@ -1,28 +1,30 @@
 class Solution {
     public List<String> generateParenthesis(int n) {
-        List<String> res = new ArrayList<>();
+        List<String> ans = new ArrayList<>();
 
-        solve(n, n, new StringBuilder(), res);
-        return res;
+        StringBuilder curr = new StringBuilder();
+
+        generate(n, curr, 0, 0, ans);
+
+        return ans;
     }
 
-    private void solve(int l, int r, StringBuilder currStr, List<String> res) {
-        // System.out.println("idx: " + idx + ", currStr: " + currStr);
-        if (l == 0 && r == 0) {
-            res.add(currStr.toString());
+    private void generate(int n, StringBuilder curr, int open, int close, List<String> ans) {
+        if (curr.length() == (2*n)) {
+            ans.add(curr.toString());
             return;
         }
 
-        if (l > 0) {
-            currStr.append('(');
-            solve(l - 1, r, currStr, res);
-            currStr.deleteCharAt(currStr.length() - 1);
+        if (open != n) {
+            curr.append("(");
+            generate(n, curr, open + 1, close, ans);
+            curr.deleteCharAt(curr.length() - 1);
         }
-        
-        if (r > l) {
-            currStr.append(')');
-            solve(l, r - 1, currStr, res);
-            currStr.deleteCharAt(currStr.length() - 1);
+
+        if (close < open) {
+            curr.append(")");
+            generate(n, curr, open, close + 1, ans);
+            curr.deleteCharAt(curr.length() - 1);
         }
     }
 }
