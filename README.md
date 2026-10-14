@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
+| [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
@@ -338,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0115-distinct-subsequences](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0115-distinct-subsequences/) | Hard |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
+| [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0788-rotated-digits](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0788-rotated-digits/) | Medium |
@@ -450,6 +452,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0301-remove-invalid-parentheses](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
+| [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [1096-brace-expansion-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1096-brace-expansion-ii/) | Hard |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1980-find-unique-binary-string/) | Medium |
@@ -484,6 +487,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
+| [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0751-ip-to-cidr](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0751-ip-to-cidr/) | Medium |
 | [1009-complement-of-base-10-integer](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1009-complement-of-base-10-integer/) | Easy |
 | [1386-cinema-seat-allocation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1386-cinema-seat-allocation/) | Medium |
@@ -947,6 +951,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0351-android-unlock-patterns](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0351-android-unlock-patterns/) | Medium |
+| [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
