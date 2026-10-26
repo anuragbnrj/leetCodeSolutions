@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
+| [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0835-image-overlap](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0835-image-overlap/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
@@ -413,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1086-high-five](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1086-high-five/) | Easy |
 | [1096-brace-expansion-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1096-brace-expansion-ii/) | Hard |
@@ -745,6 +747,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0133-clone-graph/) | Medium |
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
+| [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
@@ -862,6 +865,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
@@ -871,6 +875,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2196-create-binary-tree-from-descriptions](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2196-create-binary-tree-from-descriptions/) | Medium |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
