@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
 | [0531-lonely-pixel-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0531-lonely-pixel-i/) | Medium |
@@ -539,6 +540,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0788-rotated-digits](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0788-rotated-digits/) | Medium |
@@ -666,6 +668,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0049-group-anagrams/) | Medium |
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [1086-high-five](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1086-high-five/) | Easy |
 | [1094-car-pooling](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1094-car-pooling/) | Medium |
