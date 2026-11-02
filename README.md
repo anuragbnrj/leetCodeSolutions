@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
+| [0531-lonely-pixel-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0531-lonely-pixel-i/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
@@ -218,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
 | [0286-walls-and-gates](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0286-walls-and-gates/) | Medium |
 | [0308-range-sum-query-2d-mutable](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0308-range-sum-query-2d-mutable/) | Medium |
+| [0531-lonely-pixel-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0531-lonely-pixel-i/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0835-image-overlap](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0835-image-overlap/) | Medium |
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
@@ -423,6 +425,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0217-contains-duplicate/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0380-insert-delete-getrandom-o1](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0380-insert-delete-getrandom-o1/) | Medium |
+| [0531-lonely-pixel-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0531-lonely-pixel-i/) | Medium |
 | [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
 | [0874-walking-robot-simulation](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1086-high-five](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1086-high-five/) | Easy |
