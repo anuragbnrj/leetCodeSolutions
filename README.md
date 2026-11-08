@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
+| [0487-max-consecutive-ones-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0487-max-consecutive-ones-ii/) | Medium |
 | [0531-lonely-pixel-i](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0531-lonely-pixel-i/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0628-maximum-product-of-three-numbers/) | Easy |
 | [0666-path-sum-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0666-path-sum-iv/) | Medium |
@@ -369,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0396-rotate-function](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0396-rotate-function/) | Medium |
 | [0465-optimal-account-balancing](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0465-optimal-account-balancing/) | Hard |
 | [0486-predict-the-winner](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0486-predict-the-winner/) | Medium |
+| [0487-max-consecutive-ones-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0487-max-consecutive-ones-ii/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0788-rotated-digits](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0788-rotated-digits/) | Medium |
 | [0877-stone-game](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0877-stone-game/) | Medium |
@@ -416,6 +418,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0487-max-consecutive-ones-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0487-max-consecutive-ones-ii/) | Medium |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
