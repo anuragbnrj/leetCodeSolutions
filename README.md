@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1140-stone-game-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1140-stone-game-ii/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1288-remove-covered-intervals](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
@@ -229,6 +230,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0835-image-overlap](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0835-image-overlap/) | Medium |
 | [0994-rotting-oranges](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1536-minimum-swaps-to-arrange-a-binary-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1536-minimum-swaps-to-arrange-a-binary-grid/) | Medium |
@@ -787,6 +789,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
@@ -805,6 +808,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0200-number-of-islands/) | Medium |
 | [0695-max-area-of-island](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0695-max-area-of-island/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1254-number-of-closed-islands/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1559-detect-cycles-in-2d-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1559-detect-cycles-in-2d-grid/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
@@ -825,6 +829,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [1267-count-servers-that-communicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [2029-stone-game-ix](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2029-stone-game-ix/) | Medium |
 | [2833-furthest-point-from-origin](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/2833-furthest-point-from-origin/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -849,6 +854,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1096-brace-expansion-ii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1096-brace-expansion-ii/) | Hard |
 | [1254-number-of-closed-islands](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1257-smallest-common-region](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1257-smallest-common-region/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1306-jump-game-iii](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1345-jump-game-iv](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/anuragbnrj/leetCodeSolutions/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
