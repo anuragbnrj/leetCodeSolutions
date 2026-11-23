@@ -1,37 +1,40 @@
 class ProductOfNumbers {
-    List<Integer> list;
-    List<Integer> product;
-    List<Integer> zeroes;
+
+    // Stores cumulative product of the stream
+    private ArrayList<Integer> prefixProduct = new ArrayList<>();
+    private int size = 0;
 
     public ProductOfNumbers() {
-        list =  new ArrayList<>();
-        list.add(-1);
-        product = new ArrayList<>();
-        product.add(1);
-        zeroes = new ArrayList<>();
-        zeroes.add(0);        
+        // Initialize the product list with 1 to handle multiplication logic
+        this.prefixProduct.add(1);
+        this.size = 0;
     }
-    
+
     public void add(int num) {
-        list.add(num);
         if (num == 0) {
-            zeroes.add(zeroes.get(zeroes.size() - 1) + 1);
-            product.add(product.get(product.size() - 1));
+            // If num is 0, reset the cumulative products since multiplication
+            // with 0 invalidates previous products
+            this.prefixProduct = new ArrayList<Integer>();
+            this.prefixProduct.add(1);
+            this.size = 0;
         } else {
-            zeroes.add(zeroes.get(zeroes.size() - 1));
-            product.add(product.get(product.size() - 1) * num);
+            // Append the cumulative product of the current number with the last
+            // product
+            this.prefixProduct.add(this.prefixProduct.get(size) * num);
+            this.size++;
         }
     }
-    
+
     public int getProduct(int k) {
-        int len = list.size();
+        // Check if the requested product length exceeds the size of the valid
+        // product list
+        if (k > this.size) return 0;
 
-        int zeroCount = zeroes.get(len - 1) - zeroes.get(len - 1 - k);
-        if (zeroCount > 0) {
-            return 0;
-        }
-
-        return product.get(len - 1) / product.get(len - 1 - k);
+        // Compute the product of the last k elements using division
+        return (
+            this.prefixProduct.get(this.size) /
+            this.prefixProduct.get(this.size - k)
+        );
     }
 }
 
